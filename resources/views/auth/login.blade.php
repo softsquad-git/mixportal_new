@@ -40,7 +40,7 @@
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 								<label class="form-check-label" for="remember">
-									{{ __('Pamiętaj mnie') }}
+									{{ __('trans.nav.remember_me') }}
 								</label>
 							</div>
 						</div>
@@ -49,7 +49,7 @@
 							<div class="form-check">
 						@if (Route::has('password.request'))
 							<a class="" href="{{ route('password.request') }}">
-								{{ __('Zapomniałem hasła') }}
+								{{ __('trans.nav.forgot_password') }}
 							</a>
 						@endif
 						</div>
@@ -58,7 +58,7 @@
 
 					<div class="form-group row mb-0 justify-content-center">
 						<div class="mt-2">
-							<button style="width:150px" type="submit"> {{ __('Zaloguj się') }}</button>
+							<button style="width:150px" class="btn btn-outline-primary" type="submit"> {{ __('trans.nav.login') }}</button>
 
 						</div>
 					</div>
@@ -69,9 +69,7 @@
 						<h3 class="text-center">Nie masz konta?</h3>
 					</div>
 					<div class="mt-3">
-						<form method="GET" action="{{ route('register') }}">
-						<button type="submit" style="width:150px"> {{ __('Zarejestruj się') }}</button>
-						</form>
+						<a href="{{ route('register') }}" class="btn btn-outline-primary">{{ __('trans.nav.register') }}</a>
 					</div>
 				</div>
 			</div>
