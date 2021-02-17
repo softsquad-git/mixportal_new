@@ -58,7 +58,7 @@
 
 					<div class="form-group row mb-0 justify-content-center">
 						<div class="mt-2">
-							<ui5-button style="width:150px" type="submit" submits="true" design="Default"> {{ __('Zaloguj się') }}</ui5-button>
+							<button style="width:150px" type="submit"> {{ __('Zaloguj się') }}</button>
 
 						</div>
 					</div>
@@ -70,7 +70,7 @@
 					</div>
 					<div class="mt-3">
 						<form method="GET" action="{{ route('register') }}">
-						<ui5-button  submits="true"  style="width:150px"  design="Default"> {{ __('Zarejestruj się') }}</ui5-button>
+						<button type="submit" style="width:150px"> {{ __('Zarejestruj się') }}</button>
 						</form>
 					</div>
 				</div>
