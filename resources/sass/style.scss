@@ -371,24 +371,24 @@ section .section-title {
   #footer h5 {
     padding-left: 0;
     border-left: transparent;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     margin-bottom: 10px;
   }
 }
-
+.navbar {
+  border-bottom: 2px solid #95d1ff!important;
+}
 .navbar-brand {
   width: 102px;
   height: 21px;
   left: 194px;
-  top: 10px;
-
-  font-family: Maximum-Mpact, sans-serif;
+  font-family: Maximum-Mpact, sans-serif!important;
   font-style: normal;
   font-weight: 500;
-  font-size: 30px;
-  line-height: 14px;
+  font-size: 1.5rem!important;
   color: #0099FF !important;
-  text-shadow: 0px 0px 1px #0099FF;
+  text-shadow: 0 0 1px #0099FF;
+  margin-top: -25px!important;
 }
 
 .navbar-brand:hover {
@@ -396,7 +396,7 @@ section .section-title {
 }
 
 .nav-item {
-  font-family: "Open Sans";
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -484,3 +484,9 @@ a.single-news.big {
   min-height: 530px;
   font-size: 25px;
 }
+.payments-logo {
+  margin-top: 50px;
+}
+.payments-logo img {
+   width: 120px;
+ }

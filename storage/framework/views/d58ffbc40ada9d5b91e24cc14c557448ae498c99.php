@@ -6,11 +6,11 @@
 			<div class="card-body">
 				<form method="POST" action="<?php echo e(route('login')); ?>">
 					<?php echo csrf_field(); ?>
-					<h4 class="text-center mb-3 font-weight-bold">Logowanie</h4>
+					<h4 class="text-center mb-3 font-weight-bold"><?php echo e(__('trans.nav.login')); ?></h4>
 					<div class="form-group row justify-content-center ">
 
 						<div class=" col-md-6">
-							<input id="email" type="email" placeholder="Email" class="form-control  <?php $__errorArgs = ['email'];
+							<input id="email" type="email" placeholder="<?php echo e(__('trans.forms.email')); ?>" class="form-control  <?php $__errorArgs = ['email'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
@@ -37,7 +37,7 @@ unset($__errorArgs, $__bag); ?>
 					<div class="form-group row justify-content-center">
 
 						<div class="col-md-6">
-							<input id="password" type="password" placeholder="Hasło" class="form-control <?php $__errorArgs = ['password'];
+							<input id="password" type="password" placeholder="<?php echo e(__('trans.forms.password.password')); ?>" class="form-control <?php $__errorArgs = ['password'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
@@ -66,7 +66,7 @@ unset($__errorArgs, $__bag); ?>
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="remember" id="remember" <?php echo e(old('remember') ? 'checked' : ''); ?>>
 								<label class="form-check-label" for="remember">
-									<?php echo e(__('Pamiętaj mnie')); ?>
+									<?php echo e(__('trans.nav.remember_me')); ?>
 
 								</label>
 							</div>
@@ -76,7 +76,7 @@ unset($__errorArgs, $__bag); ?>
 							<div class="form-check">
 						<?php if(Route::has('password.request')): ?>
 							<a class="" href="<?php echo e(route('password.request')); ?>">
-								<?php echo e(__('Zapomniałem hasła')); ?>
+								<?php echo e(__('trans.nav.forgot_password')); ?>
 
 							</a>
 						<?php endif; ?>
@@ -86,7 +86,7 @@ unset($__errorArgs, $__bag); ?>
 
 					<div class="form-group row mb-0 justify-content-center">
 						<div class="mt-2">
-							<ui5-button style="width:150px" type="submit" submits="true" design="Default"> <?php echo e(__('Zaloguj się')); ?></ui5-button>
+							<button style="width:150px" class="btn btn-outline-primary" type="submit"> <?php echo e(__('trans.nav.login')); ?></button>
 
 						</div>
 					</div>
@@ -94,12 +94,10 @@ unset($__errorArgs, $__bag); ?>
 
 				<div class="form-group row mb-0 justify-content-center">
 					<div class="col-md-12 offset-md-0 offset-lg-12 mt-4">
-						<h3 class="text-center">Nie masz konta?</h3>
+						<h3 class="text-center"><?php echo e(__('trans.nav.dont_account')); ?></h3>
 					</div>
 					<div class="mt-3">
-						<form method="GET" action="<?php echo e(route('register')); ?>">
-						<ui5-button  submits="true"  style="width:150px"  design="Default"> <?php echo e(__('Zarejestruj się')); ?></ui5-button>
-						</form>
+						<a href="<?php echo e(route('register')); ?>" class="btn btn-outline-primary"><?php echo e(__('trans.nav.register')); ?></a>
 					</div>
 				</div>
 			</div>

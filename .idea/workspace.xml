@@ -2,49 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7707f15f-b231-4d7a-a8eb-09731257f39b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/View/Composers/GlobalComposer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Adverts/AdvertRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Categories/CategoryRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/News/NewsRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Pages/PageRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Settings/SettingRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Users/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Adverts/AdvertService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Categories/CategoryService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/News/NewsService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Pages/PageService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Settings/SettingService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_192840_create_news_translation_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/maximum-mpact.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/RightFacebookWidget.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/user/adverts/UserAdvertFormComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/firebase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/trans.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/pl/trans.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/fb-widget.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/maximum-mpact.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/categories/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/news/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/news/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/partials/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/settings/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/pages/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/partials/facebook_widget.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/partials/navbar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/partials/single_news.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/adverts/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/adverts/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/partials/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/web/admin.web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/web/front.web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/web/user.web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Adverts/AdvertsAmenityRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Categories/SubCategoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/UploadFileService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/PAYPAL_LOGO_WHITE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/PayPal-Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/FrontAdItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/FrontAdsList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Ads/Ad.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Ads/Ad.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Ads/AdTranslate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Ads/AdTranslate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/Adverts/AdvertController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/Adverts/AdvertController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Adverts/AdvertRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Adverts/AdvertRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Categories/CategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Categories/CategoryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Adverts/AdvertService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Adverts/AdvertService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/cache/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/RightFacebookWidget.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/RightFacebookWidget.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/user/adverts/UserAdvertFormComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/user/adverts/UserAdvertFormComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/trans.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/pl/trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/pl/trans.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/news/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/news/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/advert/publicList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/advert/publicList.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/pages/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/pages/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/partials/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/partials/single_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/partials/single_news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/adverts/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/adverts/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web/front.web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web/front.web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/ySPCkCxd4zuUX9iF2YBu0uMlxx0D3Wkay8fX9H6v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/02e604d754523d7f668709a70ee6da8f0d650f19.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/02e604d754523d7f668709a70ee6da8f0d650f19.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/08804733f2836d5456787caa3cd87a1441363b7d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/08804733f2836d5456787caa3cd87a1441363b7d.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/34650ea4a14cbbbe55fe2e163e8c01b6a0038c2f.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/34650ea4a14cbbbe55fe2e163e8c01b6a0038c2f.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/385ff5e6257f8ad841165980b2efcd5a7476fc61.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/385ff5e6257f8ad841165980b2efcd5a7476fc61.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/3af0b2009099e4226813030938440b54fb1d17d8.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/3af0b2009099e4226813030938440b54fb1d17d8.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/6e5e59ff9407d9aebf8eb2f37e267501cbc6c611.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6e5e59ff9407d9aebf8eb2f37e267501cbc6c611.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/865c080de68f1f2a0c99ce5549a19c203ab7bbb7.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/865c080de68f1f2a0c99ce5549a19c203ab7bbb7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ab4e148b37b4e5b42a10984c4497d4c895d69bd9.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/ab4e148b37b4e5b42a10984c4497d4c895d69bd9.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/cd51612f150a1b27d2118d3051e712ccd9ad27e1.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/cd51612f150a1b27d2118d3051e712ccd9ad27e1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d58ffbc40ada9d5b91e24cc14c557448ae498c99.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/d58ffbc40ada9d5b91e24cc14c557448ae498c99.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/df9ae46b81e54efcec689b9dc1c53ce693be8b2a.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/df9ae46b81e54efcec689b9dc1c53ce693be8b2a.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ff909ce9c6cb353fbeca9caf58c120c94290d4f5.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/ff909ce9c6cb353fbeca9caf58c120c94290d4f5.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +219,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/en" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dydaktyka" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -213,6 +231,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/image" />
       <recent name="$PROJECT_DIR$/resources/lang/en" />
       <recent name="$PROJECT_DIR$/resources/sass" />
       <recent name="$PROJECT_DIR$/public/fonts" />
@@ -238,8 +257,51 @@
       <workItem from="1612349640576" duration="27152000" />
       <workItem from="1612910843860" duration="45329000" />
       <workItem from="1613124423091" duration="322000" />
-      <workItem from="1613374633685" duration="23126000" />
+      <workItem from="1613374633685" duration="73434000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1613521025174</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613521025174</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit">
+      <created>1613521119045</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613521119045</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit">
+      <created>1613521764097</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613521764097</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit">
+      <created>1613522079093</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613522079093</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit">
+      <created>1613522307782</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613522307782</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit">
+      <created>1613522839398</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1613522839398</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +318,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -274,6 +340,12 @@
           <url>file://$PROJECT_DIR$/resources/views/layouts/app.blade.php</url>
           <line>20</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/components/FrontAdsList.vue</url>
+          <line>68</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

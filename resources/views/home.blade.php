@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="row">
-            @foreach($news->slice(5, 100000000000) as $new)
+            @foreach($news->slice(5, 10) as $new)
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     @include('front.partials.single_news', ['item' => $new])
                 </div>

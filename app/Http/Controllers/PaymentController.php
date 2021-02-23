@@ -19,7 +19,8 @@ use phpDocumentor\Reflection\DocBlock\Tags\Var_;
 
 class PaymentController extends Controller
 {
-    public function payment(Request $request){
+    public function payment(Request $request)
+    {
         $typeOfAdvert = $request->get('type');
         $user = Auth::user();
         $paymentSetting = PaymentSetting::where('type',$typeOfAdvert)->get();
@@ -82,7 +83,7 @@ class PaymentController extends Controller
             $invoice = new InvoiceController();
             $invoiceStream = $invoice->index($payuSetting);
 
-            $adminEmail = User::where('admin','=',"1") -> first()->email;
+            $adminEmail = User::where('admin', 1) -> first()->email;
             Mail::to($payuSetting->get()[0]->email)->send(new OrderMail($invoiceStream));
 
             Mail::to( $adminEmail)->send(new OrderMail($invoiceStream));

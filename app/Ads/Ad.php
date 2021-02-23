@@ -2,7 +2,9 @@
 
 namespace App\Ads;
 
+use App\AdvertAmenity;
 use App\Categories;
+use App\Services\Adverts\AdvertService;
 use App\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -71,10 +73,28 @@ class Ad extends Model
     }
 
     /**
+     * @return string|null
+     */
+    public function getImage(): ?string
+    {
+        $image = $this->photos()->first();
+        if ($image) {
+            return AdvertService::AD_IMAGES_SRC.$image->src;
+        }
+
+        return null;
+    }
+
+    /**
      * @return HasOne
      */
     public function accommodation(): HasOne
     {
         return $this->hasOne(AdAccommodations::class, 'ad_id');
+    }
+
+    public function amenities(): HasMany
+    {
+        return $this->hasMany(AdvertAmenity::class, 'ad_id');
     }
 }

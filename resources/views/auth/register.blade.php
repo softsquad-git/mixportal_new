@@ -121,7 +121,7 @@
                                     <div class="form-group row">
                                         <label for="street" class="col-md-4 col-form-label text-md-left ">{{ trans('trans.forms.address.address') }}</label>
 
-                                        <div class="col-md-7 mt-4">
+                                        <div class="col-md-7">
                                             <input id="street" type="text" class="form-control @error('street') is-invalid @enderror" name="street" value="{{ old('street') }}"  autocomplete="street" required >
 
                                             @error('street')
@@ -133,7 +133,7 @@
                                     </div>
 
                                     <div class="form-group row">
-                                        <label for="postcode" class="col-md-4 col-form-label text-md-left ">{{ trans('trans.forms.address.post_code') }}}</label>
+                                        <label for="postcode" class="col-md-4 col-form-label text-md-left ">{{ trans('trans.forms.address.post_code') }}</label>
 
                                         <div class="col-md-7">
                                             <input id="postcode" type="text" class="form-control @error('postcode') is-invalid @enderror" name="postcode" value="{{ old('postcode') }}"  autocomplete="postcode"  inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" required>
@@ -160,21 +160,24 @@
 
 
                                     <div class="form-group row">
-                                        <label for="state" class="col-md-4 col-form-label text-md-left ">{{ trans('trans.forms.address.voivodeship') }}</label>
+                                        <label for="state" class="col-md-4 col-form-label text-md-left ">{{ trans('trans.forms.address.country') }}</label>
 
                                         <div class="col-md-7">
-                                            <!--<input id="state" type="text" class="form-control @error('state') is-invalid @enderror" name="state" value="{{ old('state') }}"  autocomplete="state" >-->
-                                            <select class="form-control" id="state" value="{{ old('state') }}"  autocomplete="state" name="state" required>
-                                            <?php foreach ($states as $provin){
-                                                echo '<option class="state_option" value="'.$provin.'">'.$provin.'</option>';
-                                            }?>
-
+                                            <select name="country" class="form-control" aria-label="{{ trans('trans.forms.address.country') }}">
+                                                <option value="" selected>{{ __('trans.forms.address.country') }}</option>
+                                                @foreach(config('app.countries') as $code => $country)
+                                                    <option value="{{ $code }}">{{ $country }}</option>
+                                                @endforeach
                                             </select>
-                                            @error('state')
-                                            <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                            @enderror
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <label for="isVat">
+                                                <input id="isVat" type="checkbox" class="custom-checkbox" name="is_payer_vat">
+                                                {{ App::getLocale() == 'pl' ? 'Jestem płatnikiem VAT' : 'I am a VAT payer' }}
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
@@ -212,7 +215,7 @@
                                     <div class="form-group row mb-0">
                                         <div class="col-md-12 offset-md-0">
                                             <button type="submit" class="btn btn-outline-primary">
-                                                {{ __('Załóż konto i przejdź dalej') }}
+                                                {{ __('trans.nav.create_account') }}
                                             </button>
                                         </div>
                                     </div>

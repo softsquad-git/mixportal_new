@@ -6,6 +6,7 @@ return [
             może zaakceptować pliki cookies albo ma możliwość wyłączenia ich w przeglądarce, dzięki czemu nie będą
             zbierane żadne informacje. Dowiedz się więcej',
     'nav' => [
+        'create_account' => 'Create account',
         'home' => 'Home',
         'talent_base' => 'Talent Base',
         'accommodation_base' => 'Accommodation Base',
@@ -14,8 +15,9 @@ return [
         'register' => 'Sign Up',
         'forgot_password' => 'Remind password',
         'remember_me' => 'Remember me',
+        'dont_account' => "You don't have an account?",
         'pp' => 'Privacy Policy',
-        'support_editorial' => 'Wesprzyj redakcję',
+        'support_editorial' => 'Support editors office',
         'contact' => 'Contact',
         'regulations' => 'Regulations',
         'price_plan' => 'Price Plan',
@@ -43,8 +45,8 @@ return [
             'accept' => 'Accept',
             'reg' => 'regulations',
             'pp' => 'privacy policy',
-            'that_reg' => 'że zgodnie z',
-            'accident' => 'nie otrzymam zwrotu abonamentu jeśli portal nie będzie działał w wyniku działania Siły Wyższej',
+            'that_reg' => 'that accordance with the',
+            'accident' => 'I will not receive a refund of the subscription if the portal does not work as a result of Force Majeure',
             'account_data' => 'Account data'
         ],
         'profile' => [
@@ -52,6 +54,14 @@ return [
             'email_changed' => 'Email changed',
             'saved' => 'Saved data',
             'change_password' => 'Change password'
+        ],
+        'advert' => [
+            'add_base' => 'Add ad in the base',
+            'title' => [
+                'accommodation' => 'accommodation',
+                'company' => 'company',
+                'talent' => 'talents'
+            ]
         ]
     ],
     'forms' => [
@@ -70,7 +80,8 @@ return [
             'address' => 'Address',
             'post_code' => 'Post code',
             'city' => 'City',
-            'voivodeship' => 'Voivodeship'
+            'voivodeship' => 'Voivodeship',
+            'country' => 'Country'
         ],
         'title' => 'Title:',
         'top_image' => 'Featured image:',

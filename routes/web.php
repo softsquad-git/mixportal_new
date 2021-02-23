@@ -92,4 +92,19 @@ Route::group(['middleware' => 'language'], function () {
         Route::post('/deleteAdvert', 'Api\AdvertController@delete');
         Route::post('/childCategories', 'HomeController@childCategories');
     });
+
+    Route::group(['prefix' => 'api', 'namespace' => 'Api'], function () {
+        Route::group(['prefix' => 'categories'], function () {
+            Route::get('all', 'CategoryController@getCategories')
+                ->name('api.categories.all');
+            Route::get('sub', 'CategoryController@getSubCategories')
+                ->name('api.categories.sub');
+        });
+        Route::group(['prefix' => 'ads', 'namespace' => 'Ads'], function () {
+            Route::get('all', 'AdController@all')
+                ->name('api.ads.all');
+        });
+        Route::get('adverts/amenities', 'AdvertAmenityController@all')
+            ->name('api.adverts.amenities');
+    });
 });

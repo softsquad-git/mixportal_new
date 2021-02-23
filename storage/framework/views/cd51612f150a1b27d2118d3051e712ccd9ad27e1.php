@@ -7,7 +7,7 @@
     <meta name="keywords" content="mixportal, noclegi, zespoły muzyczne, firmy w polsce, dj-e, artyści, newsy">
     <?php echo $__env->yieldContent('facebook_meta'); ?>
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="<?php echo e(URL::asset('/favicon.png')); ?>" type="image/x-icon"/>
+    <link rel="icon" href="<?php echo e(asset('favicon.png')); ?>" type="image/x-icon"/>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
     <title><?php echo e(config('app.name', 'Laravel')); ?></title>

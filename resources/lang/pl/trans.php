@@ -6,6 +6,7 @@ return [
             może zaakceptować pliki cookies albo ma możliwość wyłączenia ich w przeglądarce, dzięki czemu nie będą
             zbierane żadne informacje. Dowiedz się więcej',
     'nav' => [
+        'create_account' => 'Utwórz konto',
         'home' => 'Strona główna',
         'talent_base' => 'Baza talentów',
         'accommodation_base' => 'Baza noclegowa',
@@ -14,6 +15,7 @@ return [
         'register' => 'Zarejestruj się',
         'forgot_password' => 'Przypomnij hasło',
         'remember_me' => 'Zapamiętaj mnie',
+        'dont_account' => 'Nie masz konta?',
         'pp' => 'Polityka Prywatności',
         'support_editorial' => 'Wesprzyj redakcję',
         'contact' => 'Kontakt',
@@ -46,6 +48,14 @@ return [
             'that_reg' => 'że zgodnie z',
             'accident' => 'nie otrzymam zwrotu abonamentu jeśli portal nie będzie działał w wyniku działania Siły Wyższej'
         ],
+        'advert' => [
+            'add_base' => 'Dodaj ogłoszenie w bazie',
+            'title' => [
+                'accommodation' => 'noclegowej',
+                'company' => 'firm',
+                'talent' => 'talentów'
+            ]
+        ]
     ],
     'forms' => [
         'name' => 'Imię',
@@ -63,7 +73,8 @@ return [
             'address' => 'Adres',
             'post_code' => 'Kod pocztowy',
             'city' => 'Miejscowość',
-            'voivodeship' => 'Województwo'
+            'voivodeship' => 'Województwo',
+            'country' => 'Kraj'
         ],
         'title' => 'Tytuł:',
         'top_image' => 'Zdjęcie główne:',

@@ -24,7 +24,10 @@ class User extends Authenticatable implements MustVerifyEmail
         'postcode',
         'email',
         'password',
-        'admin'
+        'admin',
+        'country',
+        'is_payer_vat',
+        'type'
     ];
 
     /**

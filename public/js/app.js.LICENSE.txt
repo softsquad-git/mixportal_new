@@ -5,6 +5,14 @@
   */
 
 /*!
+ * BootstrapVue Icons, generated from Bootstrap Icons 1.2.2
+ *
+ * @link https://icons.getbootstrap.com/
+ * @license MIT
+ * https://github.com/twbs/icons/blob/master/LICENSE.md
+ */
+
+/*!
  * Sizzle CSS Selector Engine v2.3.5
  * https://sizzlejs.com/
  *
@@ -35,7 +43,20 @@
  * Date: 2020-05-04T22:49Z
  */
 
+/*! 
+  * portal-vue © Thorsten Lünborg, 2019 
+  * 
+  * Version: 2.1.7
+  * 
+  * LICENCE: MIT 
+  * 
+  * https://github.com/linusborg/portal-vue
+  * 
+ */
+
 /*! For license information please see ckeditor.js.LICENSE.txt */
+
+/*! jQuery v3.5.1 | (c) JS Foundation and other contributors | jquery.org/license */
 
 /*!*
  * @license Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.

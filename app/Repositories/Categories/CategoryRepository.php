@@ -49,10 +49,10 @@ class CategoryRepository
 
     /**
      * @param int $id
-     * @return mixed
+     * @return Categories|null
      * @throws Exception
      */
-    public function find(int $id)
+    public function find(int $id): ?Categories
     {
         $item = Categories::find($id);
         if ($item) {

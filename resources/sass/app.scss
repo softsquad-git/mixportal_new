@@ -1,5 +1,9 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face {
+  font-family: Maximum-Mpact;
+  src: url("maximum-mpact.ttf");
+}
 
 // Variables
 @import 'variables';
@@ -8,3 +12,5 @@
 @import '~bootstrap/scss/bootstrap';
 @import "fb-widget";
 @import "style";
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';

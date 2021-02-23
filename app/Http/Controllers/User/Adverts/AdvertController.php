@@ -30,7 +30,9 @@ class AdvertController extends Controller
     public function create(AdvertRequest $request, string $type)
     {
         if ($request->isMethod('POST')) {
+            $this->advertService->save($request->all());
 
+            return redirect()->route('home');
         }
 
         return view('user.adverts.form', [

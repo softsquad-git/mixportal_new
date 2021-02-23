@@ -8,11 +8,11 @@
 			<div class="card-body">
 				<form method="POST" action="{{ route('login') }}">
 					@csrf
-					<h4 class="text-center mb-3 font-weight-bold">Logowanie</h4>
+					<h4 class="text-center mb-3 font-weight-bold">{{ __('trans.nav.login') }}</h4>
 					<div class="form-group row justify-content-center ">
 
 						<div class=" col-md-6">
-							<input id="email" type="email" placeholder="Email" class="form-control  @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+							<input id="email" type="email" placeholder="{{ __('trans.forms.email') }}" class="form-control  @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
 							@error('email')
 								<span class="invalid-feedback" role="alert">
@@ -25,7 +25,7 @@
 					<div class="form-group row justify-content-center">
 
 						<div class="col-md-6">
-							<input id="password" type="password" placeholder="Hasło" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+							<input id="password" type="password" placeholder="{{ __('trans.forms.password.password') }}" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
 							@error('password')
 								<span class="invalid-feedback" role="alert">
@@ -66,7 +66,7 @@
 
 				<div class="form-group row mb-0 justify-content-center">
 					<div class="col-md-12 offset-md-0 offset-lg-12 mt-4">
-						<h3 class="text-center">Nie masz konta?</h3>
+						<h3 class="text-center">{{ __('trans.nav.dont_account') }}</h3>
 					</div>
 					<div class="mt-3">
 						<a href="{{ route('register') }}" class="btn btn-outline-primary">{{ __('trans.nav.register') }}</a>

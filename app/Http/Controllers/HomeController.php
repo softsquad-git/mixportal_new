@@ -79,7 +79,7 @@ class HomeController extends Controller
 
         $facilityList = [];
 
-        if ($data['type'] == 100) $facilityList = Facility::all();
+        if ($data['type'] == 'accommodation') $facilityList = Facility::all();
 
         if (isset($data['hiddenCity'])) {
 
@@ -105,7 +105,7 @@ class HomeController extends Controller
                 }
             }
 
-            if ($data['type'] == 1000) {
+            if ($data['type'] == 'company') {
                 $query = Advert::with(['location', 'mainphoto', 'category', 'payment', 'allphotos', 'user', 'facility'])
                     ->whereHas('location', function ($query) use ($hiddenCity, $data) {
                         $query->where(DB::raw('ST_DISTANCE(geocode,Point(' . $hiddenCity->geometry->coordinates[1] . ',' . $hiddenCity->geometry->coordinates[0] . '))* 111.38'), '<', $data['distance']);
@@ -146,7 +146,8 @@ class HomeController extends Controller
             'old' => $data,
             'list' => $advertList,
             'categories' => $categoriesList,
-            'facility' => $facilityList
+            'facility' => $facilityList,
+            'type' => $request->get('type')
         ]);
     }
 

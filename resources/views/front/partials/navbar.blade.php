@@ -1,7 +1,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="{{ route('home') }}">
-            {{ config('app.name', 'Mixportal') }}
+            {{ config('app.name', 'TrixHouse') }}
         </a>
         <a href="/_redakcja"
            class="btn btn-outline-primary ml-3 d-none d-md-block text-uppercase font-weight-bold btn-support">{{ trans('trans.nav.support_editorial') }}</a>
@@ -18,15 +18,15 @@
                 </li>
                 <li class="nav-item mt-1">
                     <a class="nav-link  font-weight-bold"
-                       href="{{route('publicList',['type'=>10])}}">{{ trans('trans.nav.talent_base') }}</a>
+                       href="{{route('publicList',['type'=>'talent'])}}">{{ trans('trans.nav.talent_base') }}</a>
                 </li>
                 <li class="nav-item mt-1">
                     <a class="nav-link  font-weight-bold text-uppercase"
-                       href="{{route('publicList',['type'=>100])}}">{{ trans('trans.nav.accommodation_base') }}</a>
+                       href="{{route('publicList',['type'=>'accommodation'])}}">{{ trans('trans.nav.accommodation_base') }}</a>
                 </li>
                 <li class="nav-item mt-1">
                     <a class="nav-link  font-weight-bold text-uppercase"
-                       href="{{route('publicList',['type'=>1000])}}">{{ trans('trans.nav.company_base') }}</a>
+                       href="{{route('publicList',['type'=>'company'])}}">{{ trans('trans.nav.company_base') }}</a>
                 </li>
                 @guest
                     <li class="nav-item special-btn mt-2 ">
@@ -43,9 +43,9 @@
                             <a class="dropdown-item font-weight-bold"
                                href="{{route('user.advert.create', ['type' => 'talent'])}}">{{ trans('trans.nav.in_talent_base') }}</a>
                             <a class="dropdown-item font-weight-bold mt-2"
-                               href="{{route('advert', ['type' => 100])}}">{{ trans('trans.nav.in_accommodation_base') }}</a>
+                               href="{{ route('user.advert.create', ['type' => 'accommodation']) }}">{{ trans('trans.nav.in_accommodation_base') }}</a>
                             <a class="dropdown-item font-weight-bold mt-2"
-                               href="{{route('advert', ['type' => 1000])}}">{{ trans('trans.nav.in_company_base') }}</a>
+                               href="{{ route('user.advert.create', ['type' => 'company']) }}">{{ trans('trans.nav.in_company_base') }}</a>
                         </div>
                     </li>
                 @endauth

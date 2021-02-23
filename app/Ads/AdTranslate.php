@@ -20,7 +20,8 @@ class AdTranslate extends Model
         'lang',
         'title',
         'slug',
-        'content'
+        'content',
+        'price'
     ];
 
     /**
