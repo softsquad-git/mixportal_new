@@ -1,7 +1,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="<?php echo e(route('home')); ?>">
-            <?php echo e(config('app.name', 'Mixportal')); ?>
+            <?php echo e(config('app.name', 'TrixHouse')); ?>
 
         </a>
         <a href="/_redakcja"
@@ -19,15 +19,15 @@
                 </li>
                 <li class="nav-item mt-1">
                     <a class="nav-link  font-weight-bold"
-                       href="<?php echo e(route('publicList',['type'=>10])); ?>"><?php echo e(trans('trans.nav.talent_base')); ?></a>
+                       href="<?php echo e(route('publicList',['type'=>'talent'])); ?>"><?php echo e(trans('trans.nav.talent_base')); ?></a>
                 </li>
                 <li class="nav-item mt-1">
                     <a class="nav-link  font-weight-bold text-uppercase"
-                       href="<?php echo e(route('publicList',['type'=>100])); ?>"><?php echo e(trans('trans.nav.accommodation_base')); ?></a>
+                       href="<?php echo e(route('publicList',['type'=>'accommodation'])); ?>"><?php echo e(trans('trans.nav.accommodation_base')); ?></a>
                 </li>
                 <li class="nav-item mt-1">
                     <a class="nav-link  font-weight-bold text-uppercase"
-                       href="<?php echo e(route('publicList',['type'=>1000])); ?>"><?php echo e(trans('trans.nav.company_base')); ?></a>
+                       href="<?php echo e(route('publicList',['type'=>'company'])); ?>"><?php echo e(trans('trans.nav.company_base')); ?></a>
                 </li>
                 <?php if(auth()->guard()->guest()): ?>
                     <li class="nav-item special-btn mt-2 ">
@@ -45,9 +45,9 @@
                             <a class="dropdown-item font-weight-bold"
                                href="<?php echo e(route('user.advert.create', ['type' => 'talent'])); ?>"><?php echo e(trans('trans.nav.in_talent_base')); ?></a>
                             <a class="dropdown-item font-weight-bold mt-2"
-                               href="<?php echo e(route('advert', ['type' => 100])); ?>"><?php echo e(trans('trans.nav.in_accommodation_base')); ?></a>
+                               href="<?php echo e(route('user.advert.create', ['type' => 'accommodation'])); ?>"><?php echo e(trans('trans.nav.in_accommodation_base')); ?></a>
                             <a class="dropdown-item font-weight-bold mt-2"
-                               href="<?php echo e(route('advert', ['type' => 1000])); ?>"><?php echo e(trans('trans.nav.in_company_base')); ?></a>
+                               href="<?php echo e(route('user.advert.create', ['type' => 'company'])); ?>"><?php echo e(trans('trans.nav.in_company_base')); ?></a>
                         </div>
                     </li>
                 <?php endif; ?>

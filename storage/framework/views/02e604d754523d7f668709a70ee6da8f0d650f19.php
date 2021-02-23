@@ -28,33 +28,33 @@
                     <div class="tab-pane fade show active" id="pl" role="tabpanel" aria-labelledby="pl-tab">
                         <div class="form-group">
                             <label for="titlePL" class="form-label">Tytuł (pl)</label>
-                            <input type="text" id="titlePL" value="<?php echo e($item->getLangTranslate('pl')->title ? $item->getLangTranslate('pl')->title : old('trans.pl.title')); ?>" name="trans[pl][title]" class="form-control">
+                            <input type="text" id="titlePL" value="<?php echo e($item->getLangTranslate('pl') ? $item->getLangTranslate('pl')->title : old('trans.pl.title')); ?>" name="trans[pl][title]" class="form-control">
                         </div>
                         <div class="form-group mt-3">
                             <label for="pretextPL" class="form-label"><?php echo e(trans('trans.forms.pre_info')); ?> (pl)</label>
                             <textarea type="text" class="form-control" id="pretextPL" name="trans[pl][pretext]"
-                                      maxlength="200"><?php echo e($item->getLangTranslate('pl')->pretext ? $item->getLangTranslate('pl')->pretext : old('trans.pl.pretext')); ?></textarea>
+                                      maxlength="200"><?php echo e($item->getLangTranslate('pl') ? $item->getLangTranslate('pl')->pretext : old('trans.pl.pretext')); ?></textarea>
                         </div>
                         <div class="form-group mt-3">
                             <label for="contentPL" class="form-label"><?php echo e(trans('trans.forms.pre_info')); ?> (pl)</label>
                             <textarea id="contentPL" class="ckeditor form-control"
-                                      name="trans[pl][wysiwyg-editor]" required><?php echo e($item->getLangTranslate('pl')->text ? $item->getLangTranslate('pl')->text : old('trans.pl.text')); ?></textarea>
+                                      name="trans[pl][wysiwyg-editor]" required><?php echo e($item->getLangTranslate('pl') ? $item->getLangTranslate('pl')->text : old('trans.pl.text')); ?></textarea>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="en" role="tabpanel" aria-labelledby="en-tab">
                         <div class="form-group">
                             <label for="titleEN" class="form-label">Tytuł (en)</label>
-                            <input type="text" id="titleEN" name="trans[en][title]" value="<?php echo e($item->getLangTranslate('en')->title ? $item->getLangTranslate('en')->title : old('trans.en.title')); ?>" class="form-control">
+                            <input type="text" id="titleEN" name="trans[en][title]" value="<?php echo e($item->getLangTranslate('en') ? $item->getLangTranslate('en')->title : old('trans.en.title')); ?>" class="form-control">
                         </div>
                         <div class="form-group mt-3">
                             <label for="pretextEN" class="form-label"><?php echo e(trans('trans.forms.pre_info')); ?> (en)</label>
                             <textarea type="text" class="form-control" id="pretextEN" name="trans[en][pretext]"
-                                      maxlength="200"><?php echo e($item->getLangTranslate('en')->pretext ? $item->getLangTranslate('en')->pretext : old('trans.en.pretext')); ?></textarea>
+                                      maxlength="200"><?php echo e($item->getLangTranslate('en') ? $item->getLangTranslate('en')->pretext : old('trans.en.pretext')); ?></textarea>
                         </div>
                         <div class="form-group mt-3">
                             <label for="contentEN" class="form-label"><?php echo e(trans('trans.forms.pre_info')); ?> (en)</label>
                             <textarea id="contentEN" class="ckeditor form-control"
-                                      name="trans[en][wysiwyg-editor]" required><?php echo e($item->getLangTranslate('en')->text ? $item->getLangTranslate('en')->text : old('trans.en.text')); ?></textarea>
+                                      name="trans[en][wysiwyg-editor]" required><?php echo e($item->getLangTranslate('en') ? $item->getLangTranslate('en')->text : old('trans.en.text')); ?></textarea>
                         </div>
                     </div>
                 </div>

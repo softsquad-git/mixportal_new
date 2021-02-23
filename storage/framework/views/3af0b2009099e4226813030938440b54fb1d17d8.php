@@ -27,7 +27,9 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <ul class="list-unstyled quick-links">
-                    <li><img width=80 src="<?php echo e(asset('image/PAYU_LOGO_WHITE.png')); ?>" alt="PayU-Logo"></li>
+                    <li>
+                        <img width=80 src="<?php echo e(asset('image/PAYU_LOGO_WHITE.png')); ?>" alt="PayU-Logo">
+                    </li>
                     <li><a href="<?php echo e(route('change.lang', ['locale' => 'pl'])); ?>" class="font-weight-bold pl-3">Polski</a></li>
                     <li><a href="<?php echo e(route('change.lang', ['locale' => 'en'])); ?>" class="font-weight-bold pl-3">English</a></li>
                 </ul>

@@ -27,6 +27,9 @@ class CreateUsersTable extends Migration
             $table->string('city')->nullable();
             $table->string('state')->nullable();
             $table->boolean('admin')->default(0);
+            $table->string('country')->nullable();
+            $table->boolean('is_payer_vat')->nullable();
+            $table->string('type')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

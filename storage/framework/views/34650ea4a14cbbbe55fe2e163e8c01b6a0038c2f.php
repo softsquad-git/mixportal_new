@@ -205,7 +205,7 @@ unset($__errorArgs, $__bag); ?>
                                     <div class="form-group row">
                                         <label for="street" class="col-md-4 col-form-label text-md-left "><?php echo e(trans('trans.forms.address.address')); ?></label>
 
-                                        <div class="col-md-7 mt-4">
+                                        <div class="col-md-7">
                                             <input id="street" type="text" class="form-control <?php $__errorArgs = ['street'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
@@ -231,7 +231,7 @@ unset($__errorArgs, $__bag); ?>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label for="postcode" class="col-md-4 col-form-label text-md-left "><?php echo e(trans('trans.forms.address.post_code')); ?>}</label>
+                                        <label for="postcode" class="col-md-4 col-form-label text-md-left "><?php echo e(trans('trans.forms.address.post_code')); ?></label>
 
                                         <div class="col-md-7">
                                             <input id="postcode" type="text" class="form-control <?php $__errorArgs = ['postcode'];
@@ -272,35 +272,25 @@ unset($__errorArgs, $__bag); ?>
 
 
                                     <div class="form-group row">
-                                        <label for="state" class="col-md-4 col-form-label text-md-left "><?php echo e(trans('trans.forms.address.voivodeship')); ?></label>
+                                        <label for="state" class="col-md-4 col-form-label text-md-left "><?php echo e(trans('trans.forms.address.country')); ?></label>
 
                                         <div class="col-md-7">
-                                            <!--<input id="state" type="text" class="form-control <?php $__errorArgs = ['state'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>" name="state" value="<?php echo e(old('state')); ?>"  autocomplete="state" >-->
-                                            <select class="form-control" id="state" value="<?php echo e(old('state')); ?>"  autocomplete="state" name="state" required>
-                                            <?php foreach ($states as $provin){
-                                                echo '<option class="state_option" value="'.$provin.'">'.$provin.'</option>';
-                                            }?>
-
+                                            <select name="country" class="form-control" aria-label="<?php echo e(trans('trans.forms.address.country')); ?>">
+                                                <option value="" selected><?php echo e(__('trans.forms.address.country')); ?></option>
+                                                <?php $__currentLoopData = config('app.countries'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $code => $country): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                    <option value="<?php echo e($code); ?>"><?php echo e($country); ?></option>
+                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                             </select>
-                                            <?php $__errorArgs = ['state'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-                                            <span class="invalid-feedback" role="alert">
-                                            <strong><?php echo e($message); ?></strong>
-                                        </span>
-                                            <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <label for="isVat">
+                                                <input id="isVat" type="checkbox" class="custom-checkbox" name="is_payer_vat">
+                                                <?php echo e(App::getLocale() == 'pl' ? 'Jestem płatnikiem VAT' : 'I am a VAT payer'); ?>
+
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
@@ -338,7 +328,7 @@ unset($__errorArgs, $__bag); ?>
                                     <div class="form-group row mb-0">
                                         <div class="col-md-12 offset-md-0">
                                             <button type="submit" class="btn btn-outline-primary">
-                                                <?php echo e(__('Załóż konto i przejdź dalej')); ?>
+                                                <?php echo e(__('trans.nav.create_account')); ?>
 
                                             </button>
                                         </div>
