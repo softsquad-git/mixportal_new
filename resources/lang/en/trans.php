@@ -94,5 +94,29 @@ return [
     ],
     'exceptions' => [
         'no_found' => 'Item not found'
-    ]
+    ],
+    'email_form_contact' => 'E-mail to the contact form',
+    'email_form_contact_none' => 'In the absence of an e-mail, there is no contact form',
+    'email_view_ads' => 'E-mail visible in the ad',
+    'email_view_ads_none' => 'It can be a registration email or the one for the contact form',
+    'phone' => 'Phone',
+    'video_link'  =>'The link will be displayed as video player',
+    'yt_link' => 'Link to YouTube',
+    'sound_link' => 'The link will be displayed as soundcloud player',
+    'sc_link' => 'Link to soundcloud',
+    'amenities' => 'Amenities',
+    'acc_address' => 'Address',
+    'category' => 'Select category',
+    'category_auto_trans' => 'Category will be translated automatically',
+    'sub_category' => 'Select sub category',
+    'city' => 'City',
+    'name' => 'First and last name',
+    'message' => 'Message',
+    'send_message' => 'Send message',
+    'send_question' => 'Send an inquiry regarding accommodation',
+    'from' => 'Stay from',
+    'to' => 'Stay to',
+    'adults' => 'Adults',
+    'children' => 'Children',
+    'accommodation' => 'Accommodation'
 ];

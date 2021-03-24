@@ -1,6 +1,6 @@
 <template>
 <div>
-  <vue-facebook-page data-href="https://www.facebook.com/trixhousecom" link-text="Trix House" />
+  <vue-facebook-page data-href="https://www.facebook.com/trixmagcom" link-text="Trix House" />
 </div>
 </template>
 

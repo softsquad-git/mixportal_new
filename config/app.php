@@ -86,7 +86,7 @@ return [
     | to any of the locales which will be supported by the application.
     |
     */
-    'locale' => 'en',
+    'locale' => 'pl',
 
     /*
     |--------------------------------------------------------------------------
@@ -110,7 +110,7 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    'faker_locale' => 'pl_PL',
 
     /*
     |--------------------------------------------------------------------------

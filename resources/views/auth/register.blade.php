@@ -176,7 +176,7 @@
                                         <div class="col-md-12">
                                             <label for="isVat">
                                                 <input id="isVat" type="checkbox" class="custom-checkbox" name="is_payer_vat">
-                                                {{ App::getLocale() == 'pl' ? 'Jestem płatnikiem VAT' : 'I am a VAT payer' }}
+                                                {{ App::getLocale() == 'pl' ? 'Jestem podatnikiem VAT UE' : 'I am a VAT payer UE' }}
                                             </label>
                                         </div>
                                     </div>

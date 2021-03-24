@@ -73,7 +73,7 @@ Route::group(['middleware' => 'language'], function () {
 
     Route::get('ogloszenia', 'AdvertController@listByUser')->name('ogloszenia');
 
-    Route::get('ad/', 'HomeController@publicList')->name('publicList');
+    Route::get('ad', 'HomeController@publicList')->name('publicList');
 
     Route::get('/_{name}', 'TabsController@index')->name('tabs');
 

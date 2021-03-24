@@ -43,10 +43,6 @@ class CreatePayuPaymentsTable extends Migration
             $table->string('issuing_bank')->nullable();
             $table->string('card_type')->nullable();
             $table->timestamps();
-
-            $table->foreign('user_id')->references('id')->on('users');
-
-            $table->foreign('id_advert')->references('id')->on('adverts');
         });
     }
 

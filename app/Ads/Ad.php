@@ -2,6 +2,8 @@
 
 namespace App\Ads;
 
+use App\AdImages;
+use App\AdLocation;
 use App\AdvertAmenity;
 use App\Categories;
 use App\Services\Adverts\AdvertService;
@@ -37,7 +39,8 @@ class Ad extends Model
         'soundcloud',
         'mixcloud',
         'beatport',
-        'status'
+        'status',
+        'address'
     ];
 
     /**
@@ -69,7 +72,7 @@ class Ad extends Model
      */
     public function photos(): HasMany
     {
-        return $this->hasMany(AdPhoto::class, 'ad_id');
+        return $this->hasMany(AdImages::class, 'ad_id');
     }
 
     /**
@@ -96,5 +99,22 @@ class Ad extends Model
     public function amenities(): HasMany
     {
         return $this->hasMany(AdvertAmenity::class, 'ad_id');
+    }
+
+    /**
+     * @return HasOne
+     */
+    public function location(): HasOne
+    {
+        return $this->hasOne(AdLocation::class, 'ad_id');
+    }
+
+    /**
+     * @param string $lang
+     * @return Model|HasMany|object|null
+     */
+    public function getLangTranslate(string $lang)
+    {
+        return $this->translations()->where('lang', $lang)->first();
     }
 }

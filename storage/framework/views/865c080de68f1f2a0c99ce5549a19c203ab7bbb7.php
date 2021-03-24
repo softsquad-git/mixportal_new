@@ -60,7 +60,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item font-weight-bold text-info text-uppercase"
-                               href="<?php echo e(route('ogloszenia')); ?>">
+                               href="<?php echo e(route('user.adverts.index')); ?>">
                                 <?php echo e(trans('trans.nav.classifieds')); ?>
 
                             </a>

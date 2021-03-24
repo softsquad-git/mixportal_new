@@ -288,7 +288,7 @@ unset($__errorArgs, $__bag); ?>
                                         <div class="col-md-12">
                                             <label for="isVat">
                                                 <input id="isVat" type="checkbox" class="custom-checkbox" name="is_payer_vat">
-                                                <?php echo e(App::getLocale() == 'pl' ? 'Jestem płatnikiem VAT' : 'I am a VAT payer'); ?>
+                                                <?php echo e(App::getLocale() == 'pl' ? 'Jestem podatnikiem VAT UE' : 'I am a VAT payer UE'); ?>
 
                                             </label>
                                         </div>

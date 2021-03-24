@@ -33,6 +33,10 @@
         "jquery": "^3.5.1",
         "popper.js": "^1.16.1",
         "vue-facebook-page": "^1.0.1",
+        "vue-geo-suggest": "^1.0.2",
+        "vue-gmaps": "^0.2.2",
+        "vue-google-autocomplete": "^1.1.0",
+        "vue-places": "^2.2.2",
         "vue-upload-multiple-image": "^1.1.6"
     }
 }

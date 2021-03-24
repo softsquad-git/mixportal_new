@@ -22,6 +22,6 @@ class AdvertAmenity extends Model
 
     public function amenity(): BelongsTo
     {
-        return $this->belongsTo(AdAmenity::class);
+        return $this->belongsTo(AdAmenityTranslate::class);
     }
 }

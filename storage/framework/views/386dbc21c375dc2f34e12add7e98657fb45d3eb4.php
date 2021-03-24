@@ -19,7 +19,15 @@
             border-left: 3px solid #444242;
         }
     </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDI_jGXlQWPpqJCKXXhzHjXsuQn7NkFdPU&libraries=places"></script>
+    <script>
+        function initialize() {
+            var input = document.getElementById('autocomplete');
+            new google.maps.places.Autocomplete(input);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
 
+    </script>
 </head>
 <body>
 <div class="container-fluid">

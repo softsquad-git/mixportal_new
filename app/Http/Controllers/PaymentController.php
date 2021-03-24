@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use OpenPayU_Configuration;
 use OpenPayU_Order;
-use phpDocumentor\Reflection\DocBlock\Tags\Var_;
 
 class PaymentController extends Controller
 {

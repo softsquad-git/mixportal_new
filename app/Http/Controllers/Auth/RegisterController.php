@@ -75,12 +75,7 @@ class RegisterController extends Controller
         ]);
     }
 
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param array $data
-     * @return \App\User
-     */
+
     protected function create(array $data)
     {
         $result =  User::create([
@@ -93,11 +88,12 @@ class RegisterController extends Controller
             'nip' => $data['nip'],
             'street' => $data['street'],
             'postcode' => $data['postcode'],
-            'state' => $data['state']
+            'country' => $data['country'],
+            'is_payer_vat' => $data['is_payer_vat'] == 'on' ? true : false
         ]);
 
         Mail::to($result->email)->send(new RegisterMail($result->firstname));
-        return $result;
+        return redirect()->route('home');
     }
 
 

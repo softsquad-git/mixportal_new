@@ -13,6 +13,10 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDI_jGXlQWPpqJCKXXhzHjXsuQn7NkFdPU&libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </head>
 <body>
 
@@ -27,6 +31,10 @@
         @include('layouts.footer')
     </main>
 </div>
+<script src="{{asset('js/ckeditor/ckeditor.js')}}"></script>
+
+
+@yield('customScripts')
 <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

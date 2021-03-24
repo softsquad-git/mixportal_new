@@ -10,6 +10,8 @@ use App\Facility;
 use App\Locations2Advert;
 use App\Mail\QuestionMail;
 use App\News;
+use App\Repositories\Adverts\AdvertRepository;
+use App\Repositories\Categories\CategoryRepository;
 use App\Repositories\News\NewsRepository;
 use Couchbase\SearchSortGeoDistance;
 use Illuminate\Support\Facades\App;
@@ -30,11 +32,29 @@ class HomeController extends Controller
     private $newsRepository;
 
     /**
-     * @param NewsRepository $newsRepository
+     * @var AdvertRepository $adsRepository
      */
-    public function __construct(NewsRepository $newsRepository)
+    private $adsRepository;
+
+    /**
+     * @var CategoryRepository $categoriesRepository
+     */
+    private $categoriesRepository;
+
+    /**
+     * @param NewsRepository $newsRepository
+     * @param AdvertRepository $advertRepository
+     * @param CategoryRepository $categoryRepository
+     */
+    public function __construct(
+        NewsRepository $newsRepository,
+        AdvertRepository $advertRepository,
+        CategoryRepository $categoryRepository
+    )
     {
         $this->newsRepository = $newsRepository;
+        $this->adsRepository = $advertRepository;
+        $this->categoriesRepository = $categoryRepository;
     }
 
     /**
@@ -68,86 +88,12 @@ class HomeController extends Controller
 
     public function publicList(Request $request)
     {
-        $advertList = [];
-
-        $data = $request->all();
-
-        $categoriesList = CategoryTranslate::where('lang', App::getLocale())
-            ->whereHas('category', function ($q) use ($data) {
-                $q->where('main', $data['type'])->with('childs');
-            })->get();
-
-        $facilityList = [];
-
-        if ($data['type'] == 'accommodation') $facilityList = Facility::all();
-
-        if (isset($data['hiddenCity'])) {
-
-            $hiddenCity = json_decode($data['hiddenCity']);
-            $point = new Point($hiddenCity->geometry->coordinates[0], $hiddenCity->geometry->coordinates[1]);
-
-            $catQueryBuilder = [];
-            $facQueryBuilder = [];
-
-            for ($i = 0; $i < count($categoriesList); $i++) {
-                if (isset($data['cat_' . $categoriesList[$i]->id]) && $data['cat_' . $categoriesList[$i]->id] == 1) {
-                    array_push($catQueryBuilder, $categoriesList[$i]->id);
-                }
-
-            }
-
-            if ($facilityList) {
-                for ($i = 0; $i < count($facilityList); $i++) {
-                    if (isset($data['cat_' . $facilityList[$i]->id]) && $data['cat_' . $facilityList[$i]->id] == 1) {
-                        array_push($facQueryBuilder, $facilityList[$i]->id);
-                    }
-
-                }
-            }
-
-            if ($data['type'] == 'company') {
-                $query = Advert::with(['location', 'mainphoto', 'category', 'payment', 'allphotos', 'user', 'facility'])
-                    ->whereHas('location', function ($query) use ($hiddenCity, $data) {
-                        $query->where(DB::raw('ST_DISTANCE(geocode,Point(' . $hiddenCity->geometry->coordinates[1] . ',' . $hiddenCity->geometry->coordinates[0] . '))* 111.38'), '<', $data['distance']);
-                    })->whereHas('category', function ($query) use ($data, $catQueryBuilder) {
-                        if ($catQueryBuilder) $query->whereIn('id', $catQueryBuilder)->where('main', '=', $data['type']);
-                        else $query->where('main', '=', $data['type']);
-                    });
-
-                $textSubCategory = ChildCategoriesAdvert::find($data['subcategory']);
-
-                $advertList = $query->where('disactive', '=', 0)->whereHas('payment', function ($query) {
-                    $query->whereRaw('payu_payments.updated_at <= TIMESTAMPADD(year,1,CURRENT_TIMESTAMP) AND payu_payments.status = "SUCCESS"');
-                })->where('id_subcategory', '=', $data['subcategory'])->get();
-
-            } else {
-                $query = Advert::with(['location', 'mainphoto', 'category', 'payment', 'allphotos', 'user', 'facility'])
-                    ->whereHas('location', function ($query) use ($hiddenCity, $data) {
-                        $query->where(DB::raw('ST_DISTANCE(geocode,Point(' . $hiddenCity->geometry->coordinates[1] . ',' . $hiddenCity->geometry->coordinates[0] . '))* 111.38'), '<', $data['distance']);
-                    })->whereHas('category', function ($query) use ($data, $catQueryBuilder) {
-                        if ($catQueryBuilder) $query->whereIn('id', $catQueryBuilder)->where('main', '=', $data['type']);
-                        else $query->where('main', '=', $data['type']);
-                    });
-
-                if ($facQueryBuilder) $query->whereHas('facility', function ($query) use ($data, $facQueryBuilder) {
-                    $query->whereIn('id', $facQueryBuilder);
-                });
-
-
-                $advertList = $query->where('disactive', '=', 0)->whereHas('payment', function ($query) {
-                    $query->whereRaw('payu_payments.updated_at <= TIMESTAMPADD(year,1,CURRENT_TIMESTAMP) AND payu_payments.status = "SUCCESS"');
-                })->get();
-            }
-        }
-
+        $filters = $request->all();
+        $data = $this->adsRepository->findBy($filters);
 
         return view('advert.publicList', [
-            'textSubcategories' => $textSubCategory ?? null,
-            'old' => $data,
-            'list' => $advertList,
-            'categories' => $categoriesList,
-            'facility' => $facilityList,
-            'type' => $request->get('type')
+            'data' => $data,
+            'categories' => $this->categoriesRepository->findBy(['lang' => App::getLocale()])
         ]);
     }
 

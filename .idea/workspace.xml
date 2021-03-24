@@ -2,67 +2,949 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7707f15f-b231-4d7a-a8eb-09731257f39b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Adverts/AdvertsAmenityRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Categories/SubCategoryRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/UploadFileService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/PAYPAL_LOGO_WHITE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/PayPal-Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/FrontAdItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/FrontAdsList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/MailService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/paypal-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/advert/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/adverts/payment.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mixportal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mixportal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AdAmenity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AdAmenity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AdAmenityTranslate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AdAmenityTranslate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Ads/Ad.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Ads/Ad.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Ads/AdAccommodations.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Ads/AdAccommodations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Ads/AdPhoto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Ads/AdPhoto.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Ads/AdTranslate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Ads/AdTranslate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Advert.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Advert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AdvertAmenity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AdvertAmenity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AdvertTranslate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AdvertTranslate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/CategoryTranslate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CategoryTranslate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ChildCategoriesAdvert.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ChildCategoriesAdvert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ChildCategoryTranslate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ChildCategoryTranslate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Facility.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Facility.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Facility2Advert.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Facility2Advert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Categories/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Categories/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/News/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/News/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Pages/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Pages/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Settings/SettingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Settings/SettingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Users/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Users/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdvertController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdvertController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Ads/AdController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Ads/AdController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdvertAmenityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdvertAmenityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdvertController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdvertController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ImageUploadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ImageUploadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CkeditorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CkeditorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/News/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/News/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/Pages/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/Pages/PageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InvoiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InvoiceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NewAdvertController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NewAdvertController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TabsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TabsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/Adverts/AdvertController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/Adverts/AdvertController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckForMaintenanceMode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Language.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Language.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/LoadingMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/LoadingMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Locale.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Locale.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrustHosts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustHosts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Adverts/AdvertRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Adverts/AdvertRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CategoryRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CategoryRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/News/NewsRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/News/NewsRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/PageRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/PageRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Settings/AdminSettingRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Settings/AdminSettingRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Settings/SettingPageRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Settings/SettingPageRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/AdsResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/AdsResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/AdvertsAmentityResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/AdvertsAmentityResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Categories/CategoryResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Categories/CategoryResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Categories/SubCategoriesResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Categories/SubCategoriesResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/View/Composers/GlobalComposer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/View/Composers/GlobalComposer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Locations2Advert.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Locations2Advert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/OrderMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/OrderMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/QuestionMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/QuestionMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/RegisterMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/RegisterMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/ReportMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/ReportMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/UserNotification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/UserNotification.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/News.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/NewsTranslation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/NewsTranslation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/PaymentSetting.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/PaymentSetting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/PayuPayments.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/PayuPayments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Photos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repositories/Adverts/AdvertRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Adverts/AdvertRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Adverts/AdvertsAmenityRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Adverts/AdvertsAmenityRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repositories/Categories/CategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Categories/CategoryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Categories/SubCategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Categories/SubCategoryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/News/NewsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/News/NewsRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Pages/PageRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Pages/PageRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Settings/SettingRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Settings/SettingRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Users/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Users/UserRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Services/Adverts/AdvertService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Adverts/AdvertService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Categories/CategoryService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Categories/CategoryService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/News/NewsService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/News/NewsService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Pages/PageService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Pages/PageService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Settings/SettingService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Settings/SettingService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/UploadFileService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/UploadFileService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SettingPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SettingPage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/WebsiteTabs.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/WebsiteTabs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootstrap/cache/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/cache/packages.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/broadcasting.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/broadcasting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/hashing.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/hashing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/image.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/invoices.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/invoices.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/loading.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/loading.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/payu.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/payu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/queue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/recaptcha.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/recaptcha.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/recaptchav3.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/recaptchav3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_15_125000_create_categories_advert.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_15_125000_create_categories_advert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_15_125001_create_child_categories_advert.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_15_125001_create_child_categories_advert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_15_134943_create_adverts.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_15_134943_create_adverts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_15_135034_create_locations_advert.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_15_135034_create_locations_advert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_15_140000_create_payu_payments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_15_140000_create_payu_payments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_15_144343_create_advert_facilities.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_15_144343_create_advert_facilities.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_15_144423_create_facilities2advert.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_15_144423_create_facilities2advert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_17_083334_create_advert_photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_17_083334_create_advert_photos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_18_162529_payment_settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_18_162529_payment_settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_19_154014_create_news_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_19_154014_create_news_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_05_170619_create_website_tabs.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_170619_create_website_tabs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_04_192840_create_news_translation_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_192840_create_news_translation_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_04_234831_create_adverts_translate_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_234831_create_adverts_translate_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_09_231409_create_categories_advert_translate_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_09_231409_create_categories_advert_translate_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_09_234442_create_child_categories_advert_translate_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_09_234442_create_child_categories_advert_translate_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_11_001109_create_pages_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_11_001109_create_pages_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_16_184100_create_settings_page_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_16_184100_create_settings_page_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_16_202120_create_ads_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_16_202120_create_ads_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_16_202551_create_ads_translate_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_16_202551_create_ads_translate_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_16_202909_create_ads_accommodation_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_16_202909_create_ads_accommodation_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_16_203250_create_ads_photos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_16_203250_create_ads_photos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_18_234737_create_ads_locations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_18_234737_create_ads_locations_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_22_223121_create_ads_amenities_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_22_223121_create_ads_amenities_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_22_225144_create_ads_amenities_trans_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_22_225144_create_ads_amenities_trans_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_22_234536_create_advert_amentities_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_22_234536_create_advert_amenities_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/AdAmenitySeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AdAmenitySeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/AdminSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AdminSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/AdvertFacilities.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AdvertFacilities.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/CategoriesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CategoriesSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/PageSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PageSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/SettingPageSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/SettingPageSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/TranslateNews.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/TranslateNews.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/newsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/newsSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/paymentSettingSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/paymentSettingSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/subcategorySeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/subcategorySeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.env" beforeDir="false" afterPath="$PROJECT_DIR$/example.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/media/ad/pHEG9soJLQ6sZaOnVyBj2o3guLw8isye.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/media/ad/pHEG9soJLQ6sZaOnVyBj2o3guLw8isye.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/media/news/ALp4ouD0Gqcab4KwuGF8AoE5L7P0DNCk.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/media/news/ALp4ouD0Gqcab4KwuGF8AoE5L7P0DNCk.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/media/news/HabXZ0PIabTANfxFDA8oQ4dXxbrkpDpz.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/media/news/HabXZ0PIabTANfxFDA8oQ4dXxbrkpDpz.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/media/news/qGYtSO341U090t4hYmsdmMcPJ8yzDDDO.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/media/news/qGYtSO341U090t4hYmsdmMcPJ8yzDDDO.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/maximum-mpact.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/maximum-mpact.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/run.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/run.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/PAYPAL_LOGO_WHITE.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/PAYPAL_LOGO_WHITE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/PAYU_LOGO_LIME.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/PAYU_LOGO_LIME.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/PAYU_LOGO_WHITE.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/PAYU_LOGO_WHITE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/PayPal-Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/PayPal-Logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/criss-cross.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/criss-cross.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/default-image.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/default-image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/facebook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/helping-hand.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/helping-hand.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/100.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/100.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/101.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/101.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/102.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/102.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/103.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/103.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/85.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/85.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/86.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/86.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/87.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/87.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/88.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/88.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/89.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/89.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/90.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/90.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/91.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/91.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/92.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/92.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/93.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/93.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/94.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/94.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/95.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/95.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/95.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/95.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/96.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/96.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/97.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/97.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/98.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/98.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/99.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/99.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/icons/criss-cross.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/icons/criss-cross.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/instagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/instagram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/open-email.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/open-email.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/phone.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/phone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/sad.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/sad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/soundcloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/soundcloud.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/tick.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/tick.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/image/youtube.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/youtube.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/adverts/1603626541.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/adverts/1603626541.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/adverts/1604135247.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/adverts/1604135247.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/adverts/1604138891.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/adverts/1604138891.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/adverts/1610860739.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/adverts/1610860739.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/adverts/1610861215.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/adverts/1610861215.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/adverts/1610861220.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/adverts/1610861220.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/adverts/1610861229.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/adverts/1610861229.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/adverts/1610861249.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/adverts/1610861249.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/adverts/1613504047.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/adverts/1613504047.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/adverts/1613504058.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/adverts/1613504058.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/adverts/1613504063.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/adverts/1613504063.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/123394153_2400928383365272_5342079885930634915_o_1604315686.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/123394153_2400928383365272_5342079885930634915_o_1604315686.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/124829331_2426146994176744_5224632238277181456_o_1605182128.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/124829331_2426146994176744_5224632238277181456_o_1605182128.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1603424275.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1603424275.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1603642523.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1603642523.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1603657885.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1603657885.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1603659454.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1603659454.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1603659477.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1603659477.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1603659497.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1603659497.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1603857104.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1603857104.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1603858671.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1603858671.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1603860937.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1603860937.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1603861331.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1603861331.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1603865088.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1603865088.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1603865279.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1603865279.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1603866960.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1603866960.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1603998181.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1603998181.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604141853.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604141853.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604177268.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604177268.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604218116.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604218116.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604225155.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604225155.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604297880.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604297880.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604301302.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604301302.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604315558.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604315558.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604340133.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604340133.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604491320.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604491320.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604493526.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604493526.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604580758.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604580758.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604637014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604637014.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604637144.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604637144.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604644946.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604644946.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604925074.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604925074.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1604951440.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1604951440.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1605068772.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1605068772.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1605108351.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1605108351.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1605187303.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1605187303.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1605790395.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1605790395.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1606273163.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1606273163.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1606361039.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1606361039.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1606380188.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1606380188.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1606400291.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1606400291.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1606637206.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1606637206.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1607499761.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1607499761.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1607868891.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1607868891.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1607869018.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1607869018.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1608294544.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1608294544.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1608963630.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1608963630.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1609244130.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1609244130.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1609263126.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1609263126.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1609263403.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1609263403.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1609836069.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1609836069.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1609954910.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1609954910.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1609955160.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1609955160.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1609955375.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1609955375.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1610630879.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1610630879.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1610971640.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1610971640.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1611312672.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1611312672.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1611313122.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1611313122.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1612475495.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1612475495.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1612475829.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1612475829.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1612477904.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1612477904.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1612478619.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1612478619.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/1612478754.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/1612478754.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/image-20201028070430-1_1603865091.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/image-20201028070430-1_1603865091.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/news/image-20201028070438-2_1603865100.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/news/image-20201028070438-2_1603865100.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendor/vue-facebook-page/facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/vue-facebook-page/facebook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendor/vue-image-lightbox-carousel/src/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/vue-image-lightbox-carousel/src/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js.LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/CHANGES.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/CHANGES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/adapters/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/adapters/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/build-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/build-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/ckeditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/contents.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/contents.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/lang/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/lang/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/az.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/az.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/about/dialogs/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/about/dialogs/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/about/dialogs/logo_ckeditor.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/clipboard/dialogs/paste.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/clipboard/dialogs/paste.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/colordialog/dialogs/colordialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/colordialog/dialogs/colordialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/colordialog/dialogs/colordialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/colordialog/dialogs/colordialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/copyformatting/cursors/cursor-disabled.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/copyformatting/cursors/cursor-disabled.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/copyformatting/cursors/cursor.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/copyformatting/cursors/cursor.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/copyformatting/styles/copyformatting.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/copyformatting/styles/copyformatting.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/dialog/dialogDefinition.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/dialog/dialogDefinition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/dialog/styles/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/dialog/styles/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/div/dialogs/div.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/div/dialogs/div.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/find/dialogs/find.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/find/dialogs/find.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/flash/dialogs/flash.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/flash/dialogs/flash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/flash/images/placeholder.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/flash/images/placeholder.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/checkbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/hiddenfield.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/hiddenfield.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/radio.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/radio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/select.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/textarea.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/textarea.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/textfield.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/dialogs/textfield.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/images/hiddenfield.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/forms/images/hiddenfield.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/icons_hidpi.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/icons_hidpi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/iframe/dialogs/iframe.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/iframe/dialogs/iframe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/iframe/images/placeholder.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/iframe/images/placeholder.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/image/dialogs/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/image/dialogs/image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/image/images/noimage.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/image/images/noimage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/link/dialogs/anchor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/link/dialogs/anchor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/link/dialogs/link.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/link/dialogs/link.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/link/images/anchor.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/link/images/anchor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/link/images/hidpi/anchor.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/link/images/hidpi/anchor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/liststyle/dialogs/liststyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/liststyle/dialogs/liststyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/magicline/images/hidpi/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/magicline/images/hidpi/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/magicline/images/icon-rtl.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/magicline/images/icon-rtl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/magicline/images/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/magicline/images/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/css/oembed.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/css/oembed.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/icons/hidpi/oembed.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/icons/hidpi/oembed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/icons/oembed.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/icons/oembed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/pt-br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/lang/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/libs/jquery.oembed.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/libs/jquery.oembed.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/oembed/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/pagebreak/images/pagebreak.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/pagebreak/images/pagebreak.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/pastefromgdocs/filter/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/pastefromgdocs/filter/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/pastefromword/filter/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/pastefromword/filter/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/pastetools/filter/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/pastetools/filter/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/pastetools/filter/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/pastetools/filter/image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/preview/images/pagebreak.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/preview/images/pagebreak.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/preview/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/preview/preview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/preview/styles/screen.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/preview/styles/screen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/scayt/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/scayt/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/scayt/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/scayt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/scayt/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/scayt/dialogs/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/scayt/dialogs/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/scayt/dialogs/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/scayt/dialogs/options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/scayt/dialogs/toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_address.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_address.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_blockquote.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_blockquote.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_div.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_div.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_h1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_h1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_h2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_h2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_h3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_h3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_h4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_h4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_h5.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_h5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_h6.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_h6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_pre.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/showblocks/images/block_pre.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/dialogs/smiley.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/dialogs/smiley.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/angel_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/angel_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/angel_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/angel_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/angry_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/angry_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/angry_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/angry_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/broken_heart.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/broken_heart.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/broken_heart.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/broken_heart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/confused_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/confused_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/confused_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/confused_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/cry_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/cry_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/cry_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/cry_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/devil_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/devil_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/devil_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/devil_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/embaressed_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/embaressed_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/embarrassed_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/embarrassed_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/embarrassed_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/embarrassed_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/envelope.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/envelope.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/envelope.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/envelope.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/heart.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/heart.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/heart.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/heart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/kiss.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/kiss.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/kiss.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/kiss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/lightbulb.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/lightbulb.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/lightbulb.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/lightbulb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/omg_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/omg_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/omg_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/omg_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/regular_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/regular_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/regular_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/regular_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/sad_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/sad_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/sad_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/sad_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/shades_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/shades_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/shades_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/shades_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/teeth_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/teeth_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/teeth_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/teeth_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/thumbs_down.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/thumbs_down.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/thumbs_down.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/thumbs_down.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/thumbs_up.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/thumbs_up.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/thumbs_up.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/thumbs_up.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/tongue_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/tongue_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/tongue_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/tongue_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/tounge_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/tounge_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/wink_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/wink_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/wink_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/smiley/images/wink_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/af.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/az.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/az.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/en-au.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/en-au.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/eo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/eu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/km.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ku.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/lt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/no.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/oc.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/oc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/si.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/sr-latn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/sr-latn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/sr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/tt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/tt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ug.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/specialchar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/table/dialogs/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/table/dialogs/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/tableselection/styles/tableselection.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/tableselection/styles/tableselection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/tabletools/dialogs/tableCell.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/templates/dialogs/templates.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/templates/dialogs/templates.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/templates/dialogs/templates.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/templates/dialogs/templates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/templates/templates/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/templates/templates/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/templates/templates/images/template1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/templates/templates/images/template1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/templates/templates/images/template2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/templates/templates/images/template2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/templates/templates/images/template3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/templates/templates/images/template3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/widget/images/handle.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/widget/images/handle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/dialogs/ciframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/dialogs/wsc.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/dialogs/wsc.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/dialogs/wsc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/dialogs/wsc_ie.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/youtube/images/icon-hdpi.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/youtube/images/icon-hdpi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/plugins/youtube/images/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/plugins/youtube/images/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/css/samples.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/css/samples.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/img/github-top.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/img/github-top.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/img/header-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/img/header-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/img/header-separator.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/img/header-separator.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/img/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/img/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/img/navigation-tip.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/img/navigation-tip.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/js/sample.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/js/sample.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/js/sf.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/js/sf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/ajax.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/appendto.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/appendto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/assets/inlineall/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/assets/inlineall/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/assets/posteddata.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/assets/posteddata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/assets/sample.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/assets/sample.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/assets/uilanguages/languages.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/assets/uilanguages/languages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/datafiltering.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/datafiltering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/dialog/assets/my_dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/dialog/assets/my_dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/dialog/dialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/dialog/dialog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/divreplace.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/divreplace.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/enterkey/enterkey.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/enterkey/enterkey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/htmlwriter/outputforflash.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/htmlwriter/outputforflash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/htmlwriter/outputhtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/htmlwriter/outputhtml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/inlineall.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/inlineall.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/inlinebycode.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/inlinebycode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/inlinetextarea.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/inlinetextarea.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/jquery.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/jquery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/magicline/magicline.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/magicline/magicline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/readonly.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/readonly.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/replacebyclass.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/replacebyclass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/replacebycode.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/replacebycode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/sample.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/sample.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/sample.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/sample.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/sample_posteddata.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/sample_posteddata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/tabindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/tabindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/toolbar/toolbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/toolbar/toolbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/uicolor.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/uicolor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/uilanguages.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/uilanguages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/wysiwygarea/fullpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/wysiwygarea/fullpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/old/xhtmlstyle.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/old/xhtmlstyle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/css/fontello.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/font/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/font/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/font/fontello.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/font/fontello.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/font/fontello.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/font/fontello.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/font/fontello.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/font/fontello.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/dialog_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/dialog_ie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/dialog_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/dialog_ie8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/dialog_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/dialog_iequirks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/editor_gecko.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/editor_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/editor_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/editor_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/icons_hidpi.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/icons_hidpi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/hidpi/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/hidpi/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/hidpi/lock.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/hidpi/lock.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/hidpi/refresh.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/hidpi/refresh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/lock-open.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/lock-open.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/lock.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/lock.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/refresh.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/refresh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/spinner.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/images/spinner.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/skins/moono-lisa/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ckeditor/vendor/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ckeditor/vendor/promise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/public/web.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fonts/maximum-mpact.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fonts/maximum-mpact.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fonts/run.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fonts/run.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/FrontAdItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/FrontAdItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/FrontAdsList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/FrontAdsList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/RightFacebookWidget.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/RightFacebookWidget.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/user/adverts/UserAdvertFormComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/user/adverts/UserAdvertFormComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/osmApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/osmApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/passwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/passwords.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/trans.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/pl/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/pl/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/pl/invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/pl/invoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/pl/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/pl/pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/pl/passwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/pl/passwords.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/pl/pl.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/pl/pl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/pl/trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/pl/trans.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/pl/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/pl/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/vendor/invoices/en/invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/vendor/invoices/en/invoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/vendor/invoices/nl/invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/vendor/invoices/nl/invoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/fb-widget.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/fb-widget.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/maximum-mpact.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/maximum-mpact.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/news/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/news/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/news/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/news/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/settings/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/settings/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/advert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/advert.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/advert/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/advert/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/advert/components/formDialog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/advert/components/formDialog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/advert/components/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/advert/components/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/advert/item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/advert/item.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/advert/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/advert/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/advert/publicList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/advert/publicList.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/advert/report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/advert/report.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/advert/success.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/advert/success.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/pages/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/pages/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/partials/facebook_widget.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/partials/facebook_widget.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/partials/navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/partials/single_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/partials/single_news.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mails/order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mails/order.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mails/question.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mails/question.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mails/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mails/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mails/report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mails/report.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/success.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/success.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/adverts/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/adverts/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/adverts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/adverts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/invoices/templates/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/invoices/templates/default.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/console.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web/admin.web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web/admin.web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web/front.web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web/front.web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/ySPCkCxd4zuUX9iF2YBu0uMlxx0D3Wkay8fX9H6v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web/user.web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web/user.web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/03/53/03531cc56414fdb1ef6ca458581236818f6b78f3" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/03/53/03531cc56414fdb1ef6ca458581236818f6b78f3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/08/74/08743582456b52abe1182f5a5a3e12b457ba28b8" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/08/74/08743582456b52abe1182f5a5a3e12b457ba28b8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/08/88/08886bd6bc30e364574e3649229bd4dbb68c5b3d" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/08/88/08886bd6bc30e364574e3649229bd4dbb68c5b3d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/09/02/0902aa0a10277a2f1947fa124b29ffe81fabd555" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/09/02/0902aa0a10277a2f1947fa124b29ffe81fabd555" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/0c/a8/0ca8550097799f444122cef85cbf3a5ce49273c5" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/0c/a8/0ca8550097799f444122cef85cbf3a5ce49273c5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/13/77/137746363467e296282b06cb73fd889f433083d1" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/13/77/137746363467e296282b06cb73fd889f433083d1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/15/c6/15c63d4477b817f49d31c5b619d8ad904db4ae2f" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/15/c6/15c63d4477b817f49d31c5b619d8ad904db4ae2f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/1a/36/1a36dd56b00c09f0a4b3829918028108c8f41dd6" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/1a/36/1a36dd56b00c09f0a4b3829918028108c8f41dd6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/1a/ce/1ace5c695d815fcd59d147c1bdc1de1d95d66294" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/1a/ce/1ace5c695d815fcd59d147c1bdc1de1d95d66294" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/1f/00/1f00080c8e6651e860ffbc4a43ccfffecb041051" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/1f/00/1f00080c8e6651e860ffbc4a43ccfffecb041051" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/1f/4a/1f4a3fe1a6bd99edeefe24b2da71576fb3888724" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/1f/4a/1f4a3fe1a6bd99edeefe24b2da71576fb3888724" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/24/77/2477ff261639127b8eb4742d5fcda665481525b7" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/24/77/2477ff261639127b8eb4742d5fcda665481525b7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/25/92/25924a5762eb0d9c979429741369922887169f2a" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/25/92/25924a5762eb0d9c979429741369922887169f2a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/29/41/2941f179170ad17986d1a092e8e4b00cd70e46f3" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/29/41/2941f179170ad17986d1a092e8e4b00cd70e46f3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/2b/71/2b7140d996d5c84c96eab634ba7b041bb0de0e02" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/2b/71/2b7140d996d5c84c96eab634ba7b041bb0de0e02" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/34/7a/347ad7be82f413ef7e9010d319c38f0dc99b9b7f" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/34/7a/347ad7be82f413ef7e9010d319c38f0dc99b9b7f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/37/7e/377ed127faae5784e468179189ad0248c2ad5c33" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/37/7e/377ed127faae5784e468179189ad0248c2ad5c33" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/40/b2/40b23609dfe5773b5ac770d3a54c1c210d81bd91" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/40/b2/40b23609dfe5773b5ac770d3a54c1c210d81bd91" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/42/63/426355acea8e0e6833d68bf19695b6bb17970f17" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/42/63/426355acea8e0e6833d68bf19695b6bb17970f17" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/42/9b/429b612038168ceb6a1462daab80fa9725d0501c" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/42/9b/429b612038168ceb6a1462daab80fa9725d0501c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/47/da/47da726ed7e2c0a09dbfa8272db40ddd7bfeb946" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/47/da/47da726ed7e2c0a09dbfa8272db40ddd7bfeb946" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/50/3e/503ed9fc6120d39d05dd63b88303ae64ddcf568d" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/50/3e/503ed9fc6120d39d05dd63b88303ae64ddcf568d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/53/b4/53b4fe3bab16d079359188815c24f9bbbea3a3ce" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/53/b4/53b4fe3bab16d079359188815c24f9bbbea3a3ce" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/53/c9/53c9aae19ee1f0e0dcfa738e8868c6cb1d775cac" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/53/c9/53c9aae19ee1f0e0dcfa738e8868c6cb1d775cac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/5b/58/5b586fabd52e8e1e437badf06b4e430b40072b98" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/5b/58/5b586fabd52e8e1e437badf06b4e430b40072b98" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/5d/12/5d12f3aa1fbccc68dd13203c1e2f217be11770e1" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/5d/12/5d12f3aa1fbccc68dd13203c1e2f217be11770e1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/6a/58/6a58b6c7e02f6d92150e84bffa4418d987f54dc9" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/6a/58/6a58b6c7e02f6d92150e84bffa4418d987f54dc9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/6b/7d/6b7de648fa56b210414c24a0509645a1011f7dc0" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/6b/7d/6b7de648fa56b210414c24a0509645a1011f7dc0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/6b/f6/6bf60367dd0a109c92862809a75596fb7c1ea29c" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/6b/f6/6bf60367dd0a109c92862809a75596fb7c1ea29c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/6e/3e/6e3e7e01716a1d3e845fcd1abab2f7bf61443d28" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/6e/3e/6e3e7e01716a1d3e845fcd1abab2f7bf61443d28" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/6f/19/6f1939f53fa965f055eaedbae42b808bb1f592b3" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/6f/19/6f1939f53fa965f055eaedbae42b808bb1f592b3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/6f/40/6f40e3ac73cec6b4bbacdc7c14b90d91b19c4276" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/6f/40/6f40e3ac73cec6b4bbacdc7c14b90d91b19c4276" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/75/ef/75ef921769d15cef7c113543d702fc20b09cb1da" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/75/ef/75ef921769d15cef7c113543d702fc20b09cb1da" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/76/e7/76e7c0fdd0cc0d46502f9d381b947cdf6aa69891" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/76/e7/76e7c0fdd0cc0d46502f9d381b947cdf6aa69891" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/7a/37/7a3790f09a2dff9e40603daa1de651786d445f4b" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/7a/37/7a3790f09a2dff9e40603daa1de651786d445f4b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/7b/0c/7b0c3ad40c6d14544d2284477a8edf0f351cda40" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/7b/0c/7b0c3ad40c6d14544d2284477a8edf0f351cda40" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/7b/98/7b98ce57982ae2410fa3b2ffb2d465798f8358e0" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/7b/98/7b98ce57982ae2410fa3b2ffb2d465798f8358e0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/7f/5a/7f5a74f3020dbc01afbc75f67d9a6feab6c57cb5" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/7f/5a/7f5a74f3020dbc01afbc75f67d9a6feab6c57cb5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/83/87/8387a1c0a4d946e50adf20e7172ea712b55e8b2b" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/83/87/8387a1c0a4d946e50adf20e7172ea712b55e8b2b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/85/52/855241232569fcebc78d6d169c1e6eac5f149d4d" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/85/52/855241232569fcebc78d6d169c1e6eac5f149d4d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/93/04/93049ea71929868a0ae68ef4f0a180f8e15b6850" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/93/04/93049ea71929868a0ae68ef4f0a180f8e15b6850" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/94/e8/94e81a77d3f8b365d062dee72c471058516485dc" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/94/e8/94e81a77d3f8b365d062dee72c471058516485dc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/95/2e/952e7883989516304c2f233f35532fb1037583f9" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/95/2e/952e7883989516304c2f233f35532fb1037583f9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/99/19/991912c9ac535cfc01234e2d28b6d1b05cd29d96" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/99/19/991912c9ac535cfc01234e2d28b6d1b05cd29d96" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/99/71/997118faf2083a25050ad4aeaa3e3a3a0911cbad" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/99/71/997118faf2083a25050ad4aeaa3e3a3a0911cbad" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/99/be/99be777a2981de44f642835983fb4bb667209d6e" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/99/be/99be777a2981de44f642835983fb4bb667209d6e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/9b/7c/9b7ca3f8ecfed747c86f2fdae78aa35fb06d130c" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/9b/7c/9b7ca3f8ecfed747c86f2fdae78aa35fb06d130c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/9c/1c/9c1c01dc3ac1445a500251fc34a15d3e75a849df" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/9c/1c/9c1c01dc3ac1445a500251fc34a15d3e75a849df" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/a1/0a/a10a4d1a25bc2c3edb00d2a066aa0b4f8740788c" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/a1/0a/a10a4d1a25bc2c3edb00d2a066aa0b4f8740788c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/a1/13/a113f15f2c01ef1807f2525457a0e92eef16cfcc" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/a1/13/a113f15f2c01ef1807f2525457a0e92eef16cfcc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/a4/16/a416bdcbe4fe13f83e12f57d1e4a476121f1479f" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/a4/16/a416bdcbe4fe13f83e12f57d1e4a476121f1479f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/a6/b1/a6b164ca44df2023ba8fe7b2742e4b947dbbdb43" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/a6/b1/a6b164ca44df2023ba8fe7b2742e4b947dbbdb43" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/a8/5b/a85bfc223955f0aae1fc05d68c30f3e6e11cb776" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/a8/5b/a85bfc223955f0aae1fc05d68c30f3e6e11cb776" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/aa/22/aa22e605bb1caad46fd2470c4c74bf5ac1b32e9a" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/aa/22/aa22e605bb1caad46fd2470c4c74bf5ac1b32e9a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/ac/20/ac20c1d322a9b647424ee812645a7d0a283ef7ae" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/ac/20/ac20c1d322a9b647424ee812645a7d0a283ef7ae" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/b8/55/b85503ed5c2bc216ecbc86c82005e92d6a01c97f" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/b8/55/b85503ed5c2bc216ecbc86c82005e92d6a01c97f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/b8/fb/b8fbb4d11d6c15bef1826407b96883c9ba02d0f6" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/b8/fb/b8fbb4d11d6c15bef1826407b96883c9ba02d0f6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/ba/31/ba3106373963c3b7bed377ea4cd267e957fc790f" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/ba/31/ba3106373963c3b7bed377ea4cd267e957fc790f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/bb/dd/bbddbd50bf2bcb7bcd4d7e7db26fef5f8e7ac007" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/bb/dd/bbddbd50bf2bcb7bcd4d7e7db26fef5f8e7ac007" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/be/50/be505d3f100887504521c9d5751a1735d91c0551" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/be/50/be505d3f100887504521c9d5751a1735d91c0551" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/bf/1d/bf1d1fbb1302a2eb63513aaad26228657537f95a" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/bf/1d/bf1d1fbb1302a2eb63513aaad26228657537f95a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/bf/fc/bffc86dea677e02bfa48265cb120f06557b4ba10" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/bf/fc/bffc86dea677e02bfa48265cb120f06557b4ba10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/c1/2a/c12a03bbe5fa00e47b92820c147c5abe0471ec49" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/c1/2a/c12a03bbe5fa00e47b92820c147c5abe0471ec49" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/c6/6f/c66fe2142e67b43d5e404174a704bbd54abac130" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/c6/6f/c66fe2142e67b43d5e404174a704bbd54abac130" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/c9/6e/c96eaca07096cf82194101bdf8ac4609ff9be0c2" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/c9/6e/c96eaca07096cf82194101bdf8ac4609ff9be0c2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/ca/65/ca65a8966847ee60c68a1f52a8ed4d408ffb41a5" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/ca/65/ca65a8966847ee60c68a1f52a8ed4d408ffb41a5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/cb/e7/cbe770c0d76125be039ffec0d3e88c03de3b1492" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/cb/e7/cbe770c0d76125be039ffec0d3e88c03de3b1492" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/cc/53/cc539f7c2a28d72594bde840df6f73ea1cdcf0c8" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/cc/53/cc539f7c2a28d72594bde840df6f73ea1cdcf0c8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/d0/1a/d01aea1d3f2f93915aa9e858c083b5f0a59dd0e1" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/d0/1a/d01aea1d3f2f93915aa9e858c083b5f0a59dd0e1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/d9/08/d9082192eb00c416e66fb144cf5f77f23b1520ff" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/d9/08/d9082192eb00c416e66fb144cf5f77f23b1520ff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/da/c6/dac6b1983e6638b4f020f7a3de1c4303202ee11b" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/da/c6/dac6b1983e6638b4f020f7a3de1c4303202ee11b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/e1/96/e1961064712761e9648592b6fa38d600831c6fb5" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/e1/96/e1961064712761e9648592b6fa38d600831c6fb5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/e3/34/e3343b64ab2d0a81f5b5b8efdcc94410f31da4fc" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/e3/34/e3343b64ab2d0a81f5b5b8efdcc94410f31da4fc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/e4/44/e444678b535c5fa1c40ca72a271c40a65d28700e" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/e4/44/e444678b535c5fa1c40ca72a271c40a65d28700e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/e6/c8/e6c8546e97387674b07d93f869942b7543c29303" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/e6/c8/e6c8546e97387674b07d93f869942b7543c29303" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/e9/1b/e91b69affecbf8e8af295723e5b9d2e69e26c3c1" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/e9/1b/e91b69affecbf8e8af295723e5b9d2e69e26c3c1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/ea/d1/ead1347473cd5dc048d66a83384c9c171e03d724" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/ea/d1/ead1347473cd5dc048d66a83384c9c171e03d724" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/f4/6b/f46b80005cc6e06843591936cedf0b6ed3cbd0dc" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/f4/6b/f46b80005cc6e06843591936cedf0b6ed3cbd0dc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/f4/f5/f4f59e822581d785ba910fbf3f268eca79db8204" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/f4/f5/f4f59e822581d785ba910fbf3f268eca79db8204" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/fb/81/fb81101ff60a444c44a2705575a282fcedf3509e" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/fb/81/fb81101ff60a444c44a2705575a282fcedf3509e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/YscjHEe2RtEDF5MB12O3Y8z2ntRPyYEFr9LYLomB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/0109ceb725af91027b0d940e368681d73cb05d9b.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/0109ceb725af91027b0d940e368681d73cb05d9b.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/02e604d754523d7f668709a70ee6da8f0d650f19.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/02e604d754523d7f668709a70ee6da8f0d650f19.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/05025eb47e7e96c013c9d30a91bf0bb5f1d51d70.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/05025eb47e7e96c013c9d30a91bf0bb5f1d51d70.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/08804733f2836d5456787caa3cd87a1441363b7d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/08804733f2836d5456787caa3cd87a1441363b7d.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/0df76411c945891a0b6b6389d83478d8ee372abb.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/0df76411c945891a0b6b6389d83478d8ee372abb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/0e8e45bdd5e73f047bb200efe6fc4857704ae12a.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/0e8e45bdd5e73f047bb200efe6fc4857704ae12a.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/16afb9dc14a2ed6ad4cfc9369c08fa74e7c368cb.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/16afb9dc14a2ed6ad4cfc9369c08fa74e7c368cb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/1b46c053bc432ef1e1ead85053e296e4f0068111.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/1b46c053bc432ef1e1ead85053e296e4f0068111.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/2729cab54c1b40f9787d5817fb2542a4261c0e77.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/2729cab54c1b40f9787d5817fb2542a4261c0e77.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/2ac38d263b20c0d973c9446140946e2895aa5d29.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/2ac38d263b20c0d973c9446140946e2895aa5d29.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/32e7dba8f2479cb55fc8571b659cf84c7b5b93d6.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/32e7dba8f2479cb55fc8571b659cf84c7b5b93d6.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/33e08bf9fe070b8e0bd3586704bad326049739f8.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/33e08bf9fe070b8e0bd3586704bad326049739f8.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/34650ea4a14cbbbe55fe2e163e8c01b6a0038c2f.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/34650ea4a14cbbbe55fe2e163e8c01b6a0038c2f.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/383e097409fae225465c57c8e990809a259c5790.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/383e097409fae225465c57c8e990809a259c5790.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/385ff5e6257f8ad841165980b2efcd5a7476fc61.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/385ff5e6257f8ad841165980b2efcd5a7476fc61.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/386dbc21c375dc2f34e12add7e98657fb45d3eb4.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/386dbc21c375dc2f34e12add7e98657fb45d3eb4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/39ed9938db425d82f41df8cc11dcc41119b0260a.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/39ed9938db425d82f41df8cc11dcc41119b0260a.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/3af0b2009099e4226813030938440b54fb1d17d8.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/3af0b2009099e4226813030938440b54fb1d17d8.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/3b6cfbbd26ba0ee02a7d1fa7b4fb162506528590.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/3b6cfbbd26ba0ee02a7d1fa7b4fb162506528590.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/3e1c58ce04c4a60e8779fee64e3d4ff4a21e484d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/3e1c58ce04c4a60e8779fee64e3d4ff4a21e484d.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/42e4473d43dde2e658b15ae6167c855249dd8f90.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/42e4473d43dde2e658b15ae6167c855249dd8f90.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/4568af7b92963e9d4352832d53f61a5fd64e74ce.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/4568af7b92963e9d4352832d53f61a5fd64e74ce.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/4643b3f0082138cc67860aad900974ab2ca46ed9.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/4643b3f0082138cc67860aad900974ab2ca46ed9.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/48b8fd1c7b138816fe1122e30c451452b7097927.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/48b8fd1c7b138816fe1122e30c451452b7097927.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/496b83781e0e295042f3cdf538e98e71410032ee.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/496b83781e0e295042f3cdf538e98e71410032ee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/4ddb105ec0ed55e8cbdab87fe2a691be4b89c20f.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/4ddb105ec0ed55e8cbdab87fe2a691be4b89c20f.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/51b4719d2282129f6834205bea27d8c6160d9fc9.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/51b4719d2282129f6834205bea27d8c6160d9fc9.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/53c865faaeac282e7cb72e676d794df32582949e.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/53c865faaeac282e7cb72e676d794df32582949e.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/54b5a7ea99e6b28f9c80c92db18e6c5c31c267a0.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/54b5a7ea99e6b28f9c80c92db18e6c5c31c267a0.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/5511b8900d7898d8c2f27f33ef453d3504c27068.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/5511b8900d7898d8c2f27f33ef453d3504c27068.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/57838f78df863d981917ad5761abb9ad5b890d72.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/57838f78df863d981917ad5761abb9ad5b890d72.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/5c0853dc3da27345aba05a9d3d38bca5575e919c.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/5c0853dc3da27345aba05a9d3d38bca5575e919c.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/675995016358b1cdffe8d1a86b1662601833c8f0.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/675995016358b1cdffe8d1a86b1662601833c8f0.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/6a5180bdbf0841beb7271e76ad496f88f3826c70.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6a5180bdbf0841beb7271e76ad496f88f3826c70.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/6a522e76e02d55e0eefd505d7869407cdd7b7186.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6a522e76e02d55e0eefd505d7869407cdd7b7186.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/6de1232e68d3900840c3ca5474e1d90abbe015e5.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6de1232e68d3900840c3ca5474e1d90abbe015e5.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/6e5e59ff9407d9aebf8eb2f37e267501cbc6c611.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6e5e59ff9407d9aebf8eb2f37e267501cbc6c611.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/83fcaffee2623de0dc3ca3f9258f5861246424e9.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/83fcaffee2623de0dc3ca3f9258f5861246424e9.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/85a96b7e38cf0354d80963360aad2120c076e7b6.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/85a96b7e38cf0354d80963360aad2120c076e7b6.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/865c080de68f1f2a0c99ce5549a19c203ab7bbb7.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/865c080de68f1f2a0c99ce5549a19c203ab7bbb7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/9ac4cfd9e7272ef0bfea607a9089a32f96980f91.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/9ac4cfd9e7272ef0bfea607a9089a32f96980f91.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a01507f566e36c6eb1a18babfac4b8c62e6f7fb1.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a01507f566e36c6eb1a18babfac4b8c62e6f7fb1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a16ee7f2d749128cdbc789cc10b66e2694de0803.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a16ee7f2d749128cdbc789cc10b66e2694de0803.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a6f496a74769a2ebadfd50219cca83d2a7bac557.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a6f496a74769a2ebadfd50219cca83d2a7bac557.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a96f20a3c63744f444147715c27decea6d68777d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a96f20a3c63744f444147715c27decea6d68777d.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/ab4e148b37b4e5b42a10984c4497d4c895d69bd9.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/ab4e148b37b4e5b42a10984c4497d4c895d69bd9.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/af1629eb39cb69388806981a33bdfb2bca4c5037.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/af1629eb39cb69388806981a33bdfb2bca4c5037.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/b9fb68606b63ed9d96361bec1a70ed46079dd279.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/b9fb68606b63ed9d96361bec1a70ed46079dd279.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/bbb3673f253873da539c7c8d772f33b649387078.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/bbb3673f253873da539c7c8d772f33b649387078.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/bd0f39f74ed9db40aea23e45b8d21ac678fdd8e5.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/bd0f39f74ed9db40aea23e45b8d21ac678fdd8e5.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/c0fc0939052f8685c990dd592a40d743b15102bf.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c0fc0939052f8685c990dd592a40d743b15102bf.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/c83cef657ee8a2af1be206e3b7ce0bf61f52a5ce.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c83cef657ee8a2af1be206e3b7ce0bf61f52a5ce.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/cbf08cef2f0d56d17d8c4adec07bfe33981258b4.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/cbf08cef2f0d56d17d8c4adec07bfe33981258b4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ccbd1a9d68c35fa2cda4942d45c03ef1c54c6a65.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/ccbd1a9d68c35fa2cda4942d45c03ef1c54c6a65.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/cd51612f150a1b27d2118d3051e712ccd9ad27e1.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/cd51612f150a1b27d2118d3051e712ccd9ad27e1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d2845c1c0c8890d1ced17c96e7a80e5e5563c07d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/d2845c1c0c8890d1ced17c96e7a80e5e5563c07d.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d34dcff80633fbf9d04dd5d9c09ae03fcead4918.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/d34dcff80633fbf9d04dd5d9c09ae03fcead4918.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d43b0255866d68b8e0f9f3bf4a1dedfc8e15ba43.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/d43b0255866d68b8e0f9f3bf4a1dedfc8e15ba43.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/d58ffbc40ada9d5b91e24cc14c557448ae498c99.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/d58ffbc40ada9d5b91e24cc14c557448ae498c99.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d6aab644af663eca7b5d1ec293362a2f0cc4048b.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/d6aab644af663eca7b5d1ec293362a2f0cc4048b.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d95b238b9f0fd424dad8c7db8515a6b0169403df.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/d95b238b9f0fd424dad8c7db8515a6b0169403df.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/dc1fa97b0d5f2e6a90461f342b74d3e7a8551595.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/dc1fa97b0d5f2e6a90461f342b74d3e7a8551595.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/dcba0ca977117c4264503198132a26468a5063e1.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/dcba0ca977117c4264503198132a26468a5063e1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/de95214c46f083f9ae4affcc0aae2da8ec110b30.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/de95214c46f083f9ae4affcc0aae2da8ec110b30.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/df9ae46b81e54efcec689b9dc1c53ce693be8b2a.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/df9ae46b81e54efcec689b9dc1c53ce693be8b2a.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/e00ccad33670b9013c1c2fcf3d6701bc1d19fa9a.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e00ccad33670b9013c1c2fcf3d6701bc1d19fa9a.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/e3bf024a86f498d36a5fdf4d25b932bc2762ecc7.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e3bf024a86f498d36a5fdf4d25b932bc2762ecc7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ea4e5b6bbfda62501410edc56194b2c4c39aa166.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/ea4e5b6bbfda62501410edc56194b2c4c39aa166.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/eaced281e2e734d7753401bd6f73e2b52f9e9db1.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/eaced281e2e734d7753401bd6f73e2b52f9e9db1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ec0ed411ed5197654fecd8e944a4f69b1ce03fb9.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/ec0ed411ed5197654fecd8e944a4f69b1ce03fb9.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ed328814d80304a18d5becce0a578a0dfb7adcfe.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/ed328814d80304a18d5becce0a578a0dfb7adcfe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/efd828f50ccdc4bfd3ec3cf75c3a23b18ecefae1.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/efd828f50ccdc4bfd3ec3cf75c3a23b18ecefae1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/f3ca1462a8798d98506cb11ef0d253d43dd1c45e.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f3ca1462a8798d98506cb11ef0d253d43dd1c45e.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/f4a77f485a3a47f143d0a1c7a8a11b1b978e9b58.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f4a77f485a3a47f143d0a1c7a8a11b1b978e9b58.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/fac421e216ebefaf62bf3321e72f129a1a793f9d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/fac421e216ebefaf62bf3321e72f129a1a793f9d.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/fe177de1ed44b5574e4c69e2ccc17920dfc7ccbc.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/fe177de1ed44b5574e4c69e2ccc17920dfc7ccbc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/ff909ce9c6cb353fbeca9caf58c120c94290d4f5.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/ff909ce9c6cb353fbeca9caf58c120c94290d4f5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CreatesApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CreatesApplication.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,6 +1086,7 @@
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/vendor/anhskohbo/no-captcha" />
+      <path value="$PROJECT_DIR$/vendor/srmklive/paypal" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ny5lN871opTTV8uEHajs4ipLWA" />
@@ -219,7 +1102,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dydaktyka" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../themeforest-pRnbA3PR-rent-it-car-rental-template-with-rtl-support" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -231,6 +1114,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/public/image" />
       <recent name="$PROJECT_DIR$/resources/lang/en" />
       <recent name="$PROJECT_DIR$/resources/sass" />
@@ -257,7 +1141,16 @@
       <workItem from="1612349640576" duration="27152000" />
       <workItem from="1612910843860" duration="45329000" />
       <workItem from="1613124423091" duration="322000" />
-      <workItem from="1613374633685" duration="73434000" />
+      <workItem from="1613374633685" duration="75104000" />
+      <workItem from="1614721484849" duration="12383000" />
+      <workItem from="1614933303533" duration="15363000" />
+      <workItem from="1615366092842" duration="31695000" />
+      <workItem from="1615936538213" duration="604000" />
+      <workItem from="1616027219899" duration="748000" />
+      <workItem from="1616028002064" duration="1037000" />
+      <workItem from="1616112509658" duration="11688000" />
+      <workItem from="1616453363656" duration="552000" />
+      <workItem from="1616457681052" duration="1897000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1613521025174</created>
@@ -301,11 +1194,35 @@
       <option name="project" value="LOCAL" />
       <updated>1613522839398</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit">
+      <created>1614123739703</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614123739703</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit">
+      <created>1614123777564</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614123777564</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -333,18 +1250,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/layouts/app.blade.php</url>
-          <line>28</line>
+          <line>29</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/layouts/app.blade.php</url>
-          <line>20</line>
+          <line>21</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/components/FrontAdsList.vue</url>
-          <line>68</line>
-          <properties lambdaOrdinal="-1" />
+          <line>86</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

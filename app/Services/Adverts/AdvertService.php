@@ -2,6 +2,8 @@
 
 namespace App\Services\Adverts;
 
+use App\AdImages;
+use App\AdLocation;
 use App\Ads\Ad;
 use App\Ads\AdPhoto;
 use App\Ads\AdTranslate;
@@ -24,20 +26,29 @@ class AdvertService
      */
     protected $uploadService;
 
+    /**
+     * @param UploadFileService $uploadService
+     */
     public function __construct(UploadFileService $uploadService)
     {
         $this->uploadService = $uploadService;
     }
 
+    /**
+     * @param array $data
+     * @param Ad|null $ad
+     * @return Ad|null
+     * @throws Exception
+     */
     public function save(array $data, Ad $ad = null): ?Ad
     {
-        $translations = json_decode($data['trans']);
-        //dd($data);
         $data['user_id'] = Auth::id();
         $images = [];
         if (isset($data['images']) && !empty($data['images'])) {
             $images = $this->uploadService->uploadFile(self::AD_IMAGES_SRC, $data['images']);
         }
+
+        $translations = $data['trans'];
 
         if ($ad) {
 
@@ -45,34 +56,61 @@ class AdvertService
 
         DB::beginTransaction();
         try {
+            $data['status'] = 0;
             $ad = Ad::create($data);
-            $data['amenities'] = json_decode($data['amenities']);
-            if ($data['type'] == 'accommodation') {
-                $data['amenities'] = json_decode($data['amenities'], true);
-                $amenities = [];
-                foreach ($data['amenities'] as $amenity) {
-                    $amenities[] = [
+
+            if (is_array($translations) && count($translations) > 0) {
+                $dataTrans = [];
+                foreach ($translations as $lang => $translation) {
+                    $dataTrans[] = [
                         'ad_id' => $ad->id,
-                        'amenity_id' => $amenity
+                        'title' => $translation['title'],
+                        'lang' => $lang,
+                        'slug' => Str::slug($translation['title'], '-'),
+                        'content' => $translation['content'],
+                        'price' => $translation['price']
                     ];
                 }
-                AdvertAmenity::insert($amenities);
+
+                AdTranslate::insert($dataTrans);
             }
-            $data = [];
-            foreach ($translations as $lang => $translation) {
-                $data[] = [
+
+            if (
+                $data['type'] == 'accommodation'
+                && is_array($data['amenities'])
+                && count($data['amenities']) > 0
+            ) {
+                foreach ($data['amenities'] as $amenity) {
+                    AdvertAmenity::create([
+                        'ad_id' => $ad->id,
+                        'amenity_id' => $amenity
+                    ]);
+                }
+            }
+
+            if (is_array($images) && count($images) > 0) {
+                $dataImages = [];
+                foreach ($images as $image) {
+                    $dataImages[] = [
+                        'ad_id' => $ad->id,
+                        'src' => $image
+                    ];
+                }
+
+                AdImages::insert($dataImages);
+            }
+
+            if (
+                isset($data['location_lat'])
+                || isset($data['location_lng'])
+                || isset($data['location_place_id']
+                )) {
+                AdLocation::create([
                     'ad_id' => $ad->id,
-                    'lang' => $lang,
-                    'slug' => Str::slug($translation->title, '-'),
-                    'title' => $translation->title,
-                    'content' => $translation->content,
-                    'price' => $translation->price
-                ];
-            }
-            DB::commit();
-            AdTranslate::insert($data);
-            if (count($images) > 0) {
-                $this->saveImages($images, $ad);
+                    'lat' => $data['location_lat'],
+                    'lng' => $data['location_lng'],
+                    'place_id' => $data['location_place_id']
+                ]);
             }
 
             DB::commit();
@@ -86,6 +124,7 @@ class AdvertService
     /**
      * @param array $images
      * @param Ad $ad
+     * @return mixed
      */
     public function saveImages(array $images, Ad $ad)
     {

@@ -58,7 +58,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item font-weight-bold text-info text-uppercase"
-                               href="{{ route('ogloszenia') }}">
+                               href="{{ route('user.adverts.index') }}">
                                 {{ trans('trans.nav.classifieds') }}
                             </a>
                             <a class="dropdown-item font-weight-bold text-uppercase" href="{{ route('profile') }}">

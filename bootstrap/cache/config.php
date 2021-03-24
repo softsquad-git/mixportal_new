@@ -1,15 +1,15 @@
 <?php return array (
   'app' => 
   array (
-    'name' => 'TrixHouse',
+    'name' => 'TrixMag',
     'env' => 'local',
     'api_key' => 'AIzaSyA5rSMf_HTFlQOiZBLDJ4R_os7bUGZZbSs',
     'debug' => true,
     'url' => 'http://localhost',
     'asset_url' => NULL,
     'timezone' => 'UTC',
-    'locale' => 'en',
-    'faker_locale' => 'en_US',
+    'locale' => 'pl',
+    'faker_locale' => 'pl_PL',
     'key' => 'base64:XZLZhydAex4ZmV0K7NeotUDKJsVQjLtwWlpkrpO58O4=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
@@ -501,7 +501,7 @@
         'endpoint' => NULL,
       ),
     ),
-    'prefix' => 'trixhouse_cache',
+    'prefix' => 'trixmag_cache',
   ),
   'cors' => 
   array (
@@ -599,7 +599,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'trixhouse_database_',
+        'prefix' => 'trixmag_database_',
       ),
       'default' => 
       array (
@@ -860,7 +860,7 @@
     'from' => 
     array (
       'address' => NULL,
-      'name' => 'TrixHouse',
+      'name' => 'TrixMag',
     ),
     'markdown' => 
     array (
@@ -870,6 +870,32 @@
         0 => '/opt/lampp/htdocs/mixportal/resources/views/vendor/mail',
       ),
     ),
+  ),
+  'paypal' => 
+  array (
+    'mode' => 'sandbox',
+    'sandbox' => 
+    array (
+      'username' => 'sb-xe16e4884290_api1.business.example.com',
+      'password' => '9YD35HKXS7V8NPQB',
+      'secret' => 'APJcBrX7qQZI2NqZoN9Bj1u5q7DdAEOtRRaCyFNhlejTh4ssBPI21jOq',
+      'certificate' => '',
+      'app_id' => 'APP-80W284485P519543T',
+    ),
+    'live' => 
+    array (
+      'username' => '',
+      'password' => '',
+      'secret' => '',
+      'certificate' => '',
+      'app_id' => '',
+    ),
+    'payment_action' => 'Sale',
+    'currency' => 'PLN',
+    'billing_type' => 'MerchantInitiatedBilling',
+    'notify_url' => '',
+    'locale' => '',
+    'validate_ssl' => true,
   ),
   'payu' => 1,
   'queue' => 
@@ -987,7 +1013,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'trixhouse_session',
+    'cookie' => 'trixmag_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,

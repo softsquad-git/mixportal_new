@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAdvertAmentitiesTable extends Migration
+class CreateAdvertAmenitiesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateAdvertAmentitiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('advert_amentities', function (Blueprint $table) {
+        Schema::create('advert_amenities', function (Blueprint $table) {
             $table->id();
             $table->integer('ad_id')->index();
             $table->integer('amenity_id')->index();

@@ -121,4 +121,15 @@
       0 => 'Sarfraznawaz2005\\Loading\\ServiceProvider',
     ),
   ),
+  'srmklive/paypal' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Srmklive\\PayPal\\Providers\\PayPalServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'PayPal' => 'Srmklive\\PayPal\\Facades\\PayPal',
+    ),
+  ),
 );

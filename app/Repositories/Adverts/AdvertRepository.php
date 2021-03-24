@@ -2,6 +2,7 @@
 
 namespace App\Repositories\Adverts;
 
+use App\Ads\Ad;
 use App\Ads\AdTranslate;
 use Illuminate\Support\Facades\App;
 
@@ -38,6 +39,23 @@ class AdvertRepository
             });
         }
 
+        if (isset($filters['user']) && !empty($filters['user'])) {
+            $data->whereHas('ad', function ($q) use ($filters) {
+                $q->where('user_id', $filters['user']);
+            });
+        }
+
+        if (isset($filters['place_id']) && !empty($filters['place_id'])) {
+            $data->whereHas('ad.location', function ($q) use ($filters) {
+                $q->where('place_id', $filters['place_id']);
+            });
+        }
+
         return $data->paginate(20);
+    }
+
+    public function find(int $id)
+    {
+        return Ad::find($id);
     }
 }

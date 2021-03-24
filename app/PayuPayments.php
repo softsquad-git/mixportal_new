@@ -39,6 +39,6 @@ class PayuPayments extends Model
         'amount',
         'discount',
         'data',
-        'status', ''
+        'status', 'token'
     ];
 }

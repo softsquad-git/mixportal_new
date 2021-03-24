@@ -95,7 +95,12 @@
       </div>
       <div class="row mt-3">
         <div class="col-md-4">
-          <input type="text" aria-label="Miejscowość" class="form-control" v-model="data.city" name="hiddenCity" :placeholder="current_lang == 'pl' ? 'Miejscowość' : 'Location'" id="hiddenCity">
+          <places
+              v-model="data.city"
+              placeholder="Lokalizacja"
+              @change="val => { data.city = val }"
+              :options="{ countries: ['US', 'PL'] }">
+          </places>
         </div>
         <div class="col-md-4">
           <div class="input-group">
@@ -114,7 +119,7 @@
           </div>
         </div>
       </div>
-      <div v-if="isShowTalent" class="row mt-3">
+      <div v-if="type == 'talent'" class="row mt-3">
         <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
           <div class="input-group">
             <div class="input-group-prepend">
@@ -178,11 +183,16 @@
 </template>
 
 <script>
-
+import Places from 'vue-places'
 export default {
   name: "UserAdvertFormComponent",
+  components: {
+    Places
+  },
   data() {
     return {
+      searchInput: '', // Search text
+      selectedSuggestion: null,
       isShowTalent: false,
       isShowAccommodation: false,
       data: {
@@ -234,7 +244,8 @@ export default {
     sub_categories_url: '',
     save_url: '',
     current_lang: '',
-    amenities_url: ''
+    amenities_url: '',
+    payment_url: ''
   },
   mounted() {
     if (this.type === 'talent') {
@@ -251,6 +262,9 @@ export default {
     }
   },
   methods: {
+    getAddressData: function (addressData, placeResultData, id) {
+      this.data.city = addressData;
+    },
     formatNames(files) {
       return files.length === 1 ? files[0].name : `${files.length} files selected`
     },
@@ -300,7 +314,9 @@ export default {
         }
         this.$axios.post(this.save_url, formData)
         .then((data) => {
-          alert('dodano')
+          if (data.data.success === 1) {
+            window.location.href = this.payment_url+`?ad_id=${data.data.id}`
+          }
         })
         return true;
       }

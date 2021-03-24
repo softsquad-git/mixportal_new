@@ -46,7 +46,8 @@ return [
             'reg' => 'regulamin',
             'pp' => 'politykę prywatności',
             'that_reg' => 'że zgodnie z',
-            'accident' => 'nie otrzymam zwrotu abonamentu jeśli portal nie będzie działał w wyniku działania Siły Wyższej'
+            'accident' => 'nie otrzymam zwrotu abonamentu jeśli portal nie będzie działał w wyniku działania Siły Wyższej',
+            'account_data' => 'Dane konta'
         ],
         'advert' => [
             'add_base' => 'Dodaj ogłoszenie w bazie',
@@ -55,6 +56,10 @@ return [
                 'company' => 'firm',
                 'talent' => 'talentów'
             ]
+        ],
+        'profile' => [
+            'email_confirmed' => 'Potwierdź adres email',
+            'change_password' => 'Zmień hasło'
         ]
     ],
     'forms' => [
@@ -87,5 +92,34 @@ return [
     ],
     'exceptions' => [
         'no_found' => 'Element nie istnieje'
-    ]
+    ],
+    'get_payment' => 'Gratulacje. Twoje ogłoszenie zostało dodane.',
+    'get_payment_info' => 'Aby pojawiło się na stronie dokonaj zapłaty',
+    'payment_payu' => 'płacę z PayU',
+    'payment_paypal' => 'wybieram PayPal',
+    'email_form_contact' => 'E-mail do formularze kontaktowego',
+    'email_form_contact_none' => 'W przypadku braku maila brak formularza kontaktowego',
+    'email_view_ads' => 'E-mail widoczny w ogłoszeniu',
+    'email_view_ads_none' => 'Może być to email rejestracyjny lub ten do formularza kontaktowego',
+    'phone' => 'Telefon',
+    'video_link' => 'Link zostanie wyświetlony jako odtwarzacz video',
+    'yt_link' => 'Link do YouTube',
+    'sound_link' => 'Link zostanie wyświetlony jako odtwarzacz soundcloud',
+    'sc_link' => 'Link do soundcloud',
+    'amenities' =>'Udogodnienia',
+    'acc_address' => 'Adres',
+    'category' => 'Wybierz kategorię',
+    'category_auto_trans' => 'Kategoria zostanie przetłumaczona automatycznie',
+    'sub_category' => 'Wybierz kategorię podrzędną',
+    'city' => 'Miasto',
+    'name' => 'Imię i nazwisko',
+    'message' => 'Wiadomość',
+    'send_message' => 'Wyślij wiadomość',
+    'send_question' => 'Wyślij zapytanie w sprawie noclegu',
+    'from' => 'Pobyt od',
+    'to' => 'Pobyt do',
+    'adults' => 'Dorośli',
+    'children' => 'Dzieci',
+    'accommodation' => 'Udogodnienia'
+
 ];
